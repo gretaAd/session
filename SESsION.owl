@@ -10,7 +10,6 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126">
-        <owl:imports rdf:resource="http://purl.org/nemo/gufo#/1.0.0"/>
         <dc:creator xml:lang="bc3research.org) dr. max willis">Dr. Greta Adamo (greta.adamo</dc:creator>
         <dc:title>SESsION</dc:title>
         <terms:bibliographicCitation xml:lang="inproceedings{dblp:conf/rcis/adamow22,   author       = {greta adamo and                   max willis},   editor       = {renata s. s. guizzardi and                   jolita ralyt{\&apos;{e}} and                   xavier franch},   title        = {conceptual integration for social-ecological systems - an ontological                   approach},   booktitle    = {research challenges in information science - 16th international conference,                   {rcis} 2022, barcelona, spain, may 17-20, 2022, proceedings},   series       = {lecture notes in business information processing},   volume       = {446},   pages        = {321--337},   publisher    = {springer},   year         = {2022},   url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},   doi          = {10.1007/978-3-031-05760-1\_19},   timestamp    = {wed, 18 may 2022 10:21:56 +0200},   biburl       = {https://dblp.org/rec/conf/rcis/adamow22.bib},   bibsource    = {dblp computer science bibliography, https://dblp.org} }"></terms:bibliographicCitation>
@@ -18,7 +17,7 @@
         <terms:license>This work is distributed under Creative Commons Attribution License CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode</terms:license>
         <rdfs:comment>SESsION (Social Ecological SystemS Ontology) is the ontology derived from the concetual integration of ecosystem services (ESs) cascade and social-ecological system framework (SESF).
 
-Although the complete integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications explaining the two frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature. 
+Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature as references.
 
 SESsION has been directly aligned with gUFO (the lightweight version of UFO: http://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl).
 
@@ -38,6 +37,41 @@ The SESF elements included are:
 - ActionSituation.</rdfs:comment>
         <owl:versionInfo>This is version 1.0</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -403,6 +437,60 @@ This ObjectProperty is adapted from UFO-C.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/nemo/gufo#AbstractIndividual -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#AbstractIndividual"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Endurant -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Endurant"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Event -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Event"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#FunctionalComplex -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#IntrinsicMode -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Object -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Object"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Quality -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Quality"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Relator -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Relator"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Situation -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Situation"/>
     
 
 
