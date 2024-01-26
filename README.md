@@ -5,7 +5,7 @@
 
   ## About SESsION
 
-SESsION is the ontology derived from the concetual integration of two social-ecological system paradigms: the ecosystem services (ESs) cascade and the social-ecological system framework (SESF).
+SESsION is the ontology derived from the concetual integration of multiple social-ecological system paradigms beginning with the ecosystem services (ESs) cascade and the social-ecological system framework (SESF).
 
 Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature as references. 
 
