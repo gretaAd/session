@@ -9,7 +9,7 @@ SESsION is the ontology derived from the concetual integration of multiple socia
 
 Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature as references. 
 
-SESsION is aligned with gUFO (the lightweight version of UFO: httpp://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl).
+SESsION is aligned with gUFO (the lightweight version of UFO: https://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl).
 
 The ESs cascade elements included are:
 - **Ecosystem Service**;
