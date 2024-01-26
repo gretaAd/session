@@ -10,14 +10,15 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126">
+        <owl:imports rdf:resource="https://purl.org/nemo/gufo"/>
         <dc:creator xml:lang="bc3research.org) dr. max willis">Dr. Greta Adamo (greta.adamo</dc:creator>
         <dc:title>SESsION</dc:title>
         <terms:bibliographicCitation xml:lang="inproceedings{dblp:conf/rcis/adamow22,   author       = {greta adamo and                   max willis},   editor       = {renata s. s. guizzardi and                   jolita ralyt{\&apos;{e}} and                   xavier franch},   title        = {conceptual integration for social-ecological systems - an ontological                   approach},   booktitle    = {research challenges in information science - 16th international conference,                   {rcis} 2022, barcelona, spain, may 17-20, 2022, proceedings},   series       = {lecture notes in business information processing},   volume       = {446},   pages        = {321--337},   publisher    = {springer},   year         = {2022},   url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},   doi          = {10.1007/978-3-031-05760-1\_19},   timestamp    = {wed, 18 may 2022 10:21:56 +0200},   biburl       = {https://dblp.org/rec/conf/rcis/adamow22.bib},   bibsource    = {dblp computer science bibliography, https://dblp.org} }"></terms:bibliographicCitation>
         <terms:bibliographicCitation xml:lang="inproceedings{dblp:conf/rcis/adamow23,   author       = {greta adamo and                   max willis},   editor       = {selmin nurcan and                   andreas l. opdahl and                   haralambos mouratidis and                   aggeliki tsohou},   title        = {the omnipresent role of technology in social-ecological systems -                   ontological discussion and updated integrated framework},   booktitle    = {research challenges in information science: information science and                   the connected world - 17th international conference, {rcis} 2023,                   corfu, greece, may 23-26, 2023, proceedings},   series       = {lecture notes in business information processing},   volume       = {476},   pages        = {87--102},   publisher    = {springer},   year         = {2023},   url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},   doi          = {10.1007/978-3-031-33080-3\_6},   timestamp    = {fri, 02 jun 2023 21:24:05 +0200},   biburl       = {https://dblp.org/rec/conf/rcis/adamow23.bib},   bibsource    = {dblp computer science bibliography, https://dblp.org} }"></terms:bibliographicCitation>
         <terms:license>This work is distributed under Creative Commons Attribution License CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode</terms:license>
-        <rdfs:comment>SESsION is the ontology derived from the concetual integration of multiple social-ecological system paradigms beginning with the ecosystem services (ESs) cascade and the social-ecological system framework (SESF).
+        <rdfs:comment>SESsION (Social Ecological SystemS Ontology) is the ontology derived from the concetual integration of ecosystem services (ESs) cascade and social-ecological system framework (SESF).
 
-Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature as references.
+Although the complete integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications explaining the two frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature.
 
 SESsION has been directly aligned with gUFO (the lightweight version of UFO: http://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl).
 
@@ -37,45 +38,10 @@ The SESF elements included are:
 - ActionSituation.</rdfs:comment>
         <owl:versionInfo>This is version 1.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
 
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/bibliographicCitation -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -83,7 +49,7 @@ The SESF elements included are:
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#aggregates -->
@@ -98,7 +64,7 @@ The SESF elements included are:
 Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
         <rdfs:label xml:lang="en">aggregates</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#creates -->
@@ -110,7 +76,7 @@ Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
         <rdfs:comment>Identifies the HumanMadeResource (i.e. artefact) created by Actor.</rdfs:comment>
         <rdfs:label>creates</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#engages -->
@@ -154,7 +120,7 @@ Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
         <rdfs:comment>Identifies HumanMadeResource (i.e. artefact) as subject of the engagement of Actor. Engages is necessary to complete the technological mediation effect.</rdfs:comment>
         <rdfs:label>engages</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#influences -->
@@ -165,7 +131,7 @@ Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
         <rdfs:comment xml:lang="en">Identifies EcosystemService influenced by Governance activity.</rdfs:comment>
         <rdfs:label xml:lang="en">influences</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#involves -->
@@ -188,7 +154,7 @@ Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
         <rdfs:comment>Identifies the Actor (and its IntentionalMoment), Resource, and InformationObject involved in the ActionSituation.</rdfs:comment>
         <rdfs:label>involves</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#performedBy -->
@@ -199,7 +165,7 @@ Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
         <rdfs:comment xml:lang="en">Identifies Activity and ValueActivity performed by Actor.</rdfs:comment>
         <rdfs:label xml:lang="en">performedBy</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#provides -->
@@ -210,7 +176,7 @@ Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
         <rdfs:comment xml:lang="en">Identifies EcosystemService provided by EcosystemStructure.</rdfs:comment>
         <rdfs:label xml:lang="en">provides</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#recognizedBy -->
@@ -254,7 +220,7 @@ Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
 This ObjectProperty is derived from UFO-C.</rdfs:comment>
         <rdfs:label>recognizedBy</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#regards -->
@@ -265,7 +231,7 @@ This ObjectProperty is derived from UFO-C.</rdfs:comment>
         <rdfs:comment xml:lang="en">Identifies Policy associated with the Governance activity</rdfs:comment>
         <rdfs:label xml:lang="en">regards</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#relevantFor -->
@@ -323,7 +289,7 @@ This ObjectProperty is derived from UFO-C.</rdfs:comment>
         <rdfs:comment xml:lang="en">Identifies a plans in which resources are relevant.</rdfs:comment>
         <rdfs:label xml:lang="en">relevantFor</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#requires -->
@@ -334,7 +300,7 @@ This ObjectProperty is derived from UFO-C.</rdfs:comment>
         <rdfs:comment xml:lang="en">Identify FunctionalRole required for the production and delivery of EcosystemService.</rdfs:comment>
         <rdfs:label xml:lang="en">requires</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#technologicallyMediates -->
@@ -388,7 +354,7 @@ This ObjectProperty is derived from UFO-C.</rdfs:comment>
 This ObjectProperty is derived from the postphenomenolocal literature [verbeek2015toward].</rdfs:label>
         <rdfs:label xml:lang="en">technologicallyMediates</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#triggers -->
@@ -426,10 +392,10 @@ This ObjectProperty is derived from the postphenomenolocal literature [verbeek20
 This ObjectProperty is adapted from UFO-C.</rdfs:comment>
         <rdfs:label xml:lang="en">triggers</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -437,61 +403,7 @@ This ObjectProperty is adapted from UFO-C.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
-
-    <!-- http://purl.org/nemo/gufo#AbstractIndividual -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#AbstractIndividual"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#Endurant -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#Endurant"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#Event -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#Event"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#FunctionalComplex -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#FunctionalComplex"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#IntrinsicMode -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#IntrinsicMode"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#Object -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#Object"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#Quality -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#Quality"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#Relator -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#Relator"/>
-    
-
-
-    <!-- http://purl.org/nemo/gufo#Situation -->
-
-    <owl:Class rdf:about="http://purl.org/nemo/gufo#Situation"/>
-    
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ActionSituation -->
@@ -521,7 +433,7 @@ This ObjectProperty is adapted from UFO-C.</rdfs:comment>
 ActionSituation is a component of SESF.</rdfs:comment>
         <rdfs:label xml:lang="en">ActionSituation</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Activity -->
@@ -564,7 +476,7 @@ Activity is a synonim of Action in UFO.
 Activity is included in social-ecological system framework (SESF).</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor -->
@@ -616,7 +528,7 @@ Actor is treated as a synonimus of Agent in UFO-C.
 Actor is included from social-ecological system framework (SESF).</rdfs:comment>
         <rdfs:label xml:lang="en">Actor</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Belief -->
@@ -657,7 +569,7 @@ Actor is included from social-ecological system framework (SESF).</rdfs:comment>
 Belief is derived from UFO-C.</rdfs:comment>
         <rdfs:label xml:lang="en">Belief</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Benefit -->
@@ -731,7 +643,7 @@ Belief is derived from UFO-C.</rdfs:comment>
 The entity Benefit [DBLP:conf/edoc/SalesGGM17] has been the redesign of &quot;benefit-specific valuation&quot; [DBLP:conf/rcis/AdamoW22] ispired from [DBLP:conf/fois/AnderssonGJL16] to simplify the ontology and propose a version that is more adherent to ESs cascade.</rdfs:comment>
         <rdfs:label xml:lang="en">Benefit</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#CommitmentBasedService -->
@@ -763,7 +675,7 @@ The entity Benefit [DBLP:conf/edoc/SalesGGM17] has been the redesign of &quot;be
         <rdfs:comment>CommitmentBasedService is a Service intentionally extracted and provided di actors.</rdfs:comment>
         <rdfs:label>CommitmentBasedService</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Cultural -->
@@ -783,7 +695,7 @@ The entity Benefit [DBLP:conf/edoc/SalesGGM17] has been the redesign of &quot;be
 Cultural ecosystem services are included in both the Millennium Ecosystem Assessment (MA) and the Common International Classification of Ecosystem Services (CICES).</rdfs:comment>
         <rdfs:label xml:lang="en">Cultural</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Decision -->
@@ -839,7 +751,7 @@ Cultural ecosystem services are included in both the Millennium Ecosystem Assess
 Decision is derived from the Core Ontology on Decision Making based on UFO.</rdfs:comment>
         <rdfs:label xml:lang="en">Decision</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Deliberation -->
@@ -874,7 +786,7 @@ Decision is derived from the Core Ontology on Decision Making based on UFO.</rdf
 Deliberation is derived from the Core Ontology on Decision Making based on UFO and is useful to model &quot;action situation&quot; in SESF.</rdfs:comment>
         <rdfs:label xml:lang="en">Deliberation</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Desire -->
@@ -915,7 +827,7 @@ Deliberation is derived from the Core Ontology on Decision Making based on UFO a
 Desire is derived from UFO-C.</rdfs:comment>
         <rdfs:label xml:lang="en">Desire</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService -->
@@ -964,7 +876,7 @@ Desire is derived from UFO-C.</rdfs:comment>
 EcosystemService is included in the ecosystem service (ESs) cascade.</rdfs:comment>
         <rdfs:label>EcosystemService</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemStructure -->
@@ -1006,7 +918,7 @@ EcosystemService is included in the ecosystem service (ESs) cascade.</rdfs:comme
 This entity has been derived from the notion of &quot;function&quot; in ecosystem service (ESs) cascade.</rdfs:comment>
         <rdfs:label xml:lang="en">EcosystemStructure</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#FunctionalRole -->
@@ -1114,7 +1026,7 @@ This entity has been derived from the notion of &quot;function&quot; in ecosyste
         <rdfs:label xml:lang="en"></rdfs:label>
         <rdfs:label xml:lang="en">FunctionalRole</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Goal -->
@@ -1134,7 +1046,7 @@ This entity has been derived from the notion of &quot;function&quot; in ecosyste
 Goal is derived from UFO</rdfs:comment>
         <rdfs:label xml:lang="en">Goal</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#GovernamentOrganization -->
@@ -1155,7 +1067,7 @@ Goal is derived from UFO</rdfs:comment>
 GovernamentOrganization is a refinement of SESF proposed in [hinkel2014enhancing].</rdfs:comment>
         <rdfs:label xml:lang="en">GovernamentOrganization</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Governance -->
@@ -1188,7 +1100,7 @@ GovernamentOrganization is a refinement of SESF proposed in [hinkel2014enhancing
 This entity has been derived from the notion of &quot;governance&quot; in SESF.</rdfs:comment>
         <rdfs:label>Governance</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource -->
@@ -1219,7 +1131,7 @@ This entity has been derived from the notion of &quot;governance&quot; in SESF.<
         <rdfs:comment xml:lang="en">HumanMadeResource is a Resource intentionally designed by Agents, such as a dam.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanMadeResource</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResourceAmountofMatter -->
@@ -1303,7 +1215,7 @@ This entity has been derived from the notion of &quot;governance&quot; in SESF.<
         <rdfs:comment xml:lang="en">HumanMadeResourceAmountofMatter is a HumanMadeResource with no unity and mereologically invariant, such as the Bohrium.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanMadeResourceAmountofMatter</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResourcePhysicalObject -->
@@ -1387,7 +1299,7 @@ This entity has been derived from the notion of &quot;governance&quot; in SESF.<
         <rdfs:comment xml:lang="en">HumanMadeResourcePhysicalObject is a physical HumanMadeResource with unity, such as a plow.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanMadeResourcePhysicalObject</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#InformationObject -->
@@ -1422,7 +1334,7 @@ This entity has been derived from the notion of &quot;governance&quot; in SESF.<
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="en">InformationObject</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Intention -->
@@ -1463,7 +1375,7 @@ This entity has been derived from the notion of &quot;governance&quot; in SESF.<
 Intention is derived from UFO-C.</rdfs:comment>
         <rdfs:label xml:lang="en">Intention</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment -->
@@ -1506,7 +1418,7 @@ IntentionalMoment derives from UFO-C.
 IntentionalMoment is key to model &quot;action situation&quot; in SESF.</rdfs:comment>
         <rdfs:label xml:lang="en">IntentionalMoment</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#MonetaryValueAscription -->
@@ -1529,7 +1441,7 @@ IntentionalMoment is key to model &quot;action situation&quot; in SESF.</rdfs:co
 MonetaryValueAscription is derived from the literature of ecosystem services.</rdfs:comment>
         <rdfs:label xml:lang="en">MonetaryValueAscription</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalFunctionalRole -->
@@ -1562,7 +1474,7 @@ MonetaryValueAscription is derived from the literature of ecosystem services.</r
 The distinction between social and natural roles can be found also in (arp2008function)</rdfs:comment>
         <rdfs:label xml:lang="en">NaturalFunctionalRole</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResource -->
@@ -1593,7 +1505,7 @@ The distinction between social and natural roles can be found also in (arp2008fu
         <rdfs:comment xml:lang="en">NaturalResource is a Resource that has not been intentionally designed by Agent and that can be found in nature, such as seafood.</rdfs:comment>
         <rdfs:label xml:lang="en">NaturalResource</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResourceAmountofMatter -->
@@ -1677,7 +1589,7 @@ The distinction between social and natural roles can be found also in (arp2008fu
         <rdfs:comment xml:lang="en">NaturalResourceAmountofMatter is a NaturalResource with no unity and mereologically invariant, such as water and gold.</rdfs:comment>
         <rdfs:label xml:lang="en">NaturalResourceAmountofMatter</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResourcePhysicalObject -->
@@ -1761,7 +1673,7 @@ The distinction between social and natural roles can be found also in (arp2008fu
         <rdfs:comment xml:lang="en">NaturalResourcePhysicalObject is a physical NaturalResource with unity, such as maize.</rdfs:comment>
         <rdfs:label xml:lang="en">NaturalResourcePhysicalObject</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonFunctionalRole -->
@@ -1792,7 +1704,7 @@ The distinction between social and natural roles can be found also in (arp2008fu
         <rdfs:comment xml:lang="en">NonFunctionalRole is a Role that exists in a system, yet its existence is not essential for the system to function.</rdfs:comment>
         <rdfs:label xml:lang="en">NonFunctionalRole</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonGovernamentOrganization -->
@@ -1814,7 +1726,7 @@ The distinction between social and natural roles can be found also in (arp2008fu
 NonGovernamentOrganization is a refinement of SESF proposed in [hinkel2014enhancing].</rdfs:comment>
         <rdfs:label xml:lang="en">NonGovernamentOrganization</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonMonetaryValueAscription -->
@@ -1836,7 +1748,7 @@ NonGovernamentOrganization is a refinement of SESF proposed in [hinkel2014enhanc
 NonMonetaryValueAscription is derived from the literature of ecosystem services.</rdfs:comment>
         <rdfs:label xml:lang="en">NonMonetaryValueAscription</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Norm -->
@@ -1880,7 +1792,7 @@ Norm is derived from DOLCE and is similar to NormativeDescription in UFO-C.</rdf
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="en">Norm</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Organization -->
@@ -1933,7 +1845,7 @@ Norm is derived from DOLCE and is similar to NormativeDescription in UFO-C.</rdf
 Organization is derived from UFO-C and is closely related (albeit different) from Organization in DOLCE.</rdfs:comment>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Plan -->
@@ -1996,7 +1908,7 @@ Organization is derived from UFO-C and is closely related (albeit different) fro
 Plan is adapted from [DBLP:conf/ifip5-1/SanfilippoBBGTR18].</rdfs:comment>
         <rdfs:label xml:lang="en">Plan</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Policy -->
@@ -2037,7 +1949,7 @@ Plan is adapted from [DBLP:conf/ifip5-1/SanfilippoBBGTR18].</rdfs:comment>
         <rdfs:comment xml:lang="en">Policy is an agreed plan of action formally stipulated by a group of people, e.g. organisations, institutions, governaments, or a kind of document that communicate such an agreement.</rdfs:comment>
         <rdfs:label xml:lang="en">Policy</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Preference -->
@@ -2114,7 +2026,7 @@ Plan is adapted from [DBLP:conf/ifip5-1/SanfilippoBBGTR18].</rdfs:comment>
 There is a Core Ontology on Decision Making based on UFO in which Preference is trated as the truthmaker of a ternary relationship. However SESsION at the moment offers a simplied version of it.</rdfs:comment>
         <rdfs:label xml:lang="en">Preference</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Proposition -->
@@ -2135,7 +2047,7 @@ Proposition is derived from UFO.</rdfs:comment>
         <rdfs:label xml:lang="en">Proposition</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://plato.stanford.edu/entries/propositions/"/>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Provisioning -->
@@ -2155,7 +2067,7 @@ Proposition is derived from UFO.</rdfs:comment>
 Provisioning is derived from the Millennium Ecosystem Assessment (MA) and the Common International Classification of Ecosystem Services (CICES).</rdfs:comment>
         <rdfs:label xml:lang="en">Provisioning</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Regulating -->
@@ -2178,12 +2090,12 @@ Provisioning is derived from the Millennium Ecosystem Assessment (MA) and the Co
   year={2001},
   publisher={Millennium Ecosystem Assessment}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">Regulating services are those natural proesses that maintain ecosystem conditions, such as smell reduction, erosion control, 
+        <rdfs:comment xml:lang="en">Regulating services are those natural proesses that maintain ecosystem conditions, such as smell reduction, erosion control,
 
 While the Millennium Ecosystem Assessment includes Regulating services, the Common International Classification of Ecosystem Services couples Regulation and Maintenance.</rdfs:comment>
         <rdfs:label xml:lang="en">Regulating</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource -->
@@ -2290,7 +2202,7 @@ While the Millennium Ecosystem Assessment includes Regulating services, the Comm
 This entity has been included in the social-ecological system framework (SESF).</rdfs:comment>
         <rdfs:label xml:lang="en">Resource</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ResourceSystem -->
@@ -2334,7 +2246,7 @@ This entity has been included in the social-ecological system framework (SESF).<
 ResourceSystem is included in the social-ecological system framwork (SESF)</rdfs:comment>
         <rdfs:label xml:lang="en">ResourceSystem</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Role -->
@@ -2378,7 +2290,7 @@ Role is derived from DOLCE.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="en">Role</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Service -->
@@ -2409,7 +2321,7 @@ Role is derived from DOLCE.</rdfs:comment>
         <rdfs:comment xml:lang="en">Service is a ValueBearer played by activities that are intentionally perfomed by Actor or unintentionally perfomed by natural ecosystems.</rdfs:comment>
         <rdfs:label>Service</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialActor -->
@@ -2460,7 +2372,7 @@ Role is derived from DOLCE.</rdfs:comment>
 SocialActor is synonimus of SocialAgent in UFO-C and is closely related (albeit different) from SocialAgent in DOLCE.</rdfs:comment>
         <rdfs:label xml:lang="en">SocialActor</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialCommitment -->
@@ -2501,7 +2413,7 @@ SocialActor is synonimus of SocialAgent in UFO-C and is closely related (albeit 
 SocialCommitment is derived from UFO-C.</rdfs:comment>
         <rdfs:label xml:lang="en">SocialCommitment</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialDecision -->
@@ -2534,7 +2446,7 @@ SocialCommitment is derived from UFO-C.</rdfs:comment>
         <rdfs:comment xml:lang="en">SocialDecision is a SocialCommitment recognised and established by a SocialActor.</rdfs:comment>
         <rdfs:label xml:lang="en">SocialDecision</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialFunctionalRole -->
@@ -2567,7 +2479,7 @@ SocialCommitment is derived from UFO-C.</rdfs:comment>
 The distinction between social and natural roles can be found also in (arp2008function).</rdfs:comment>
         <rdfs:label xml:lang="en">SocialFunctionalRole</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialMoment -->
@@ -2608,7 +2520,7 @@ The distinction between social and natural roles can be found also in (arp2008fu
 SocialMoment is derived from UFO-C</rdfs:comment>
         <rdfs:label xml:lang="en">SocialMoment</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialObject -->
@@ -2636,7 +2548,7 @@ SocialMoment is derived from UFO-C</rdfs:comment>
         <rdfs:comment xml:lang="en">SocialObject is an Object created by communities, such as norms and money.</rdfs:comment>
         <rdfs:label xml:lang="en">SocialObject</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValuationRelationship -->
@@ -2714,7 +2626,7 @@ ValueAscription and related entites, e.g. ValueEntity, represent the notion of &
 ValueAscription is key to model &quot;action situation&quot; in SESF.</rdfs:comment>
         <rdfs:label>ValueAscription</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueBearer -->
@@ -2769,7 +2681,7 @@ ValueBearer is derived from UFO and in that characterization correspond to a rol
 Value is included in ecosystem services (ESs) casacde framework.</rdfs:comment>
         <rdfs:label xml:lang="en">ValueBearer</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueObject -->
