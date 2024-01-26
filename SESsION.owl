@@ -1,0 +1,2745 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#"
+     xml:base="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126">
+        <owl:imports rdf:resource="http://purl.org/nemo/gufo#/1.0.0"/>
+        <dc:creator xml:lang="bc3research.org) dr. max willis">Dr. Greta Adamo (greta.adamo</dc:creator>
+        <dc:title>SESsION</dc:title>
+        <terms:bibliographicCitation xml:lang="inproceedings{dblp:conf/rcis/adamow22,   author       = {greta adamo and                   max willis},   editor       = {renata s. s. guizzardi and                   jolita ralyt{\&apos;{e}} and                   xavier franch},   title        = {conceptual integration for social-ecological systems - an ontological                   approach},   booktitle    = {research challenges in information science - 16th international conference,                   {rcis} 2022, barcelona, spain, may 17-20, 2022, proceedings},   series       = {lecture notes in business information processing},   volume       = {446},   pages        = {321--337},   publisher    = {springer},   year         = {2022},   url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},   doi          = {10.1007/978-3-031-05760-1\_19},   timestamp    = {wed, 18 may 2022 10:21:56 +0200},   biburl       = {https://dblp.org/rec/conf/rcis/adamow22.bib},   bibsource    = {dblp computer science bibliography, https://dblp.org} }"></terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="inproceedings{dblp:conf/rcis/adamow23,   author       = {greta adamo and                   max willis},   editor       = {selmin nurcan and                   andreas l. opdahl and                   haralambos mouratidis and                   aggeliki tsohou},   title        = {the omnipresent role of technology in social-ecological systems -                   ontological discussion and updated integrated framework},   booktitle    = {research challenges in information science: information science and                   the connected world - 17th international conference, {rcis} 2023,                   corfu, greece, may 23-26, 2023, proceedings},   series       = {lecture notes in business information processing},   volume       = {476},   pages        = {87--102},   publisher    = {springer},   year         = {2023},   url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},   doi          = {10.1007/978-3-031-33080-3\_6},   timestamp    = {fri, 02 jun 2023 21:24:05 +0200},   biburl       = {https://dblp.org/rec/conf/rcis/adamow23.bib},   bibsource    = {dblp computer science bibliography, https://dblp.org} }"></terms:bibliographicCitation>
+        <terms:license>This work is distributed under Creative Commons Attribution License CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode</terms:license>
+        <rdfs:comment>SESsION (Social Ecological SystemS Ontology) is the ontology derived from the concetual integration of ecosystem services (ESs) cascade and social-ecological system framework (SESF).
+
+Although the complete integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications explaining the two frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature. 
+
+SESsION has been directly aligned with gUFO (the lightweight version of UFO: http://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl).
+
+The ESs cascade elements included are:
+- Ecosystem Service;
+- Ecosystem Structure;
+- Ecosystem Function (in SESsION redesigned as Functional Role);
+- Commitment-Based Service (newly introduced entity to complement natural Ecosystem Service);
+- Value (in SESsION redesigned using the Relator Value Acription following UFO);
+- Benefit.
+
+The SESF elements included are:
+- Resource;
+- Actor;
+- Resource System;
+- Governance;
+- ActionSituation.</rdfs:comment>
+        <owl:versionInfo>This is version 1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#aggregates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#aggregates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemStructure"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ResourceSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource"/>
+        <rdfs:comment>Identifies a non existentially dependent relations between two classes.
+
+Aggregates corresponds to &quot;aggregates&quot; in UML.</rdfs:comment>
+        <rdfs:label xml:lang="en">aggregates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#creates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#creates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource"/>
+        <rdfs:comment>Identifies the HumanMadeResource (i.e. artefact) created by Actor.</rdfs:comment>
+        <rdfs:label>creates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#engages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#engages">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#technologicallyMediates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource"/>
+        <terms:bibliographicCitation>@article{adamo2022technologically,
+  title={Technologically mediated practices in sustainability transitions: Environmental monitoring and the ocean data buoy},
+  author={Adamo, Greta and Willis, Max},
+  journal={Technological Forecasting and Social Change},
+  volume={182},
+  pages={121841},
+  year={2022},
+  publisher={Elsevier}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW23,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Selmin Nurcan and
+                  Andreas L. Opdahl and
+                  Haralambos Mouratidis and
+                  Aggeliki Tsohou},
+  title        = {The Omnipresent Role of Technology in Social-Ecological Systems -
+                  Ontological Discussion and Updated Integrated Framework},
+  booktitle    = {Research Challenges in Information Science: Information Science and
+                  the Connected World - 17th International Conference, {RCIS} 2023,
+                  Corfu, Greece, May 23-26, 2023, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {476},
+  pages        = {87--102},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},
+  doi          = {10.1007/978-3-031-33080-3\_6},
+  timestamp    = {Fri, 02 Jun 2023 21:24:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment>Identifies HumanMadeResource (i.e. artefact) as subject of the engagement of Actor. Engages is necessary to complete the technological mediation effect.</rdfs:comment>
+        <rdfs:label>engages</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#influences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#influences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Governance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService"/>
+        <rdfs:comment xml:lang="en">Identifies EcosystemService influenced by Governance activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">influences</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#involves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ActionSituation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#InformationObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource"/>
+        <terms:bibliographicCitation>@article{ostrom2011background,
+  title={Background on the institutional analysis and development framework},
+  author={Ostrom, Elinor},
+  journal={Policy studies journal},
+  volume={39},
+  number={1},
+  pages={7--27},
+  year={2011},
+  publisher={Wiley Online Library}
+}</terms:bibliographicCitation>
+        <rdfs:comment>Identifies the Actor (and its IntentionalMoment), Resource, and InformationObject involved in the ActionSituation.</rdfs:comment>
+        <rdfs:label>involves</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#performedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor"/>
+        <rdfs:comment xml:lang="en">Identifies Activity and ValueActivity performed by Actor.</rdfs:comment>
+        <rdfs:label xml:lang="en">performedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#provides">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemStructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService"/>
+        <rdfs:comment xml:lang="en">Identifies EcosystemService provided by EcosystemStructure.</rdfs:comment>
+        <rdfs:label xml:lang="en">provides</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#recognizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#recognizedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialActor"/>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW23,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Selmin Nurcan and
+                  Andreas L. Opdahl and
+                  Haralambos Mouratidis and
+                  Aggeliki Tsohou},
+  title        = {The Omnipresent Role of Technology in Social-Ecological Systems -
+                  Ontological Discussion and Updated Integrated Framework},
+  booktitle    = {Research Challenges in Information Science: Information Science and
+                  the Connected World - 17th International Conference, {RCIS} 2023,
+                  Corfu, Greece, May 23-26, 2023, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {476},
+  pages        = {87--102},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},
+  doi          = {10.1007/978-3-031-33080-3\_6},
+  timestamp    = {Fri, 02 Jun 2023 21:24:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008}
+}</terms:bibliographicCitation>
+        <rdfs:comment>Identifies the SocialActor that recognizes an SocialObject.
+
+This ObjectProperty is derived from UFO-C.</rdfs:comment>
+        <rdfs:label>recognizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#regards -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#regards">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Governance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Policy"/>
+        <rdfs:comment xml:lang="en">Identifies Policy associated with the Governance activity</rdfs:comment>
+        <rdfs:label xml:lang="en">regards</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#relevantFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#relevantFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Plan"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/caise/AdamoFG20,
+	author    = {Greta Adamo and
+	Chiara Di Francescomarino and
+	Chiara Ghidini},
+	title     = {Digging into Business Process Meta-models: {A} First Ontological Analysis},
+	booktitle = {Advanced Information Systems Engineering - 32nd International Conference,
+	CAiSE 2020, Grenoble, France, June 8-12, 2020, Proceedings},
+	series    = {Lect. Notes Comput. Sci.},
+	volume    = {12127},
+	pages     = {384--400},
+	publisher = {Springer},
+	year      = {2020},
+	doi       = {10.1007/978-3-030-49435-3\_24},
+	timestamp = {Wed, 03 Jun 2020 12:04:40 +0200},
+	biburl    = {https://dblp.org/rec/conf/caise/AdamoFG20.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ifip5-1/SanfilippoBBGTR18,
+  author       = {Emilio M. Sanfilippo and
+                  Sergio Benavent and
+                  Stefano Borgo and
+                  Nicola Guarino and
+                  Nicolas Troquard and
+                  Fernando Romero and
+                  Pedro Rosado and
+                  Lorenzo Solano and
+                  Farouk Belkadi and
+                  Alain Bernard},
+  editor       = {Paolo Chiabert and
+                  Abdelaziz Bouras and
+                  Fr{\&apos;{e}}d{\&apos;{e}}ric No{\&quot;{e}}l and
+                  Jos{\&apos;{e}} R{\&apos;{\i}}os},
+  title        = {Modeling Manufacturing Resources: An Ontological Approach},
+  booktitle    = {Product Lifecycle Management to Support Industry 4.0 - 15th {IFIP}
+                  {WG} 5.1 International Conference, {PLM} 2018, Turin, Italy, July
+                  2-4, 2018, Proceedings},
+  series       = {{IFIP} Advances in Information and Communication Technology},
+  volume       = {540},
+  pages        = {304--313},
+  publisher    = {Springer},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-01614-2\_28},
+  doi          = {10.1007/978-3-030-01614-2\_28},
+  timestamp    = {Thu, 07 Sep 2023 15:53:24 +0200},
+  biburl       = {https://dblp.org/rec/conf/ifip5-1/SanfilippoBBGTR18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Identifies a plans in which resources are relevant.</rdfs:comment>
+        <rdfs:label xml:lang="en">relevantFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#requires">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#FunctionalRole"/>
+        <rdfs:comment xml:lang="en">Identify FunctionalRole required for the production and delivery of EcosystemService.</rdfs:comment>
+        <rdfs:label xml:lang="en">requires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#technologicallyMediates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#technologicallyMediates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment"/>
+        <terms:bibliographicCitation xml:lang="en">@article{adamo2022technologically,
+  title={Technologically mediated practices in sustainability transitions: Environmental monitoring and the ocean data buoy},
+  author={Adamo, Greta and Willis, Max},
+  journal={Technological Forecasting and Social Change},
+  volume={182},
+  pages={121841},
+  year={2022},
+  publisher={Elsevier}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@article{verbeek2015toward,
+  title={Toward a theory of technological mediation},
+  author={Verbeek, Peter-Paul},
+  journal={Technoscience and postphenomenology: The Manhattan papers},
+  volume={189},
+  year={2015},
+  publisher={Lexington Books Lanham, MD}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW23,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Selmin Nurcan and
+                  Andreas L. Opdahl and
+                  Haralambos Mouratidis and
+                  Aggeliki Tsohou},
+  title        = {The Omnipresent Role of Technology in Social-Ecological Systems -
+                  Ontological Discussion and Updated Integrated Framework},
+  booktitle    = {Research Challenges in Information Science: Information Science and
+                  the Connected World - 17th International Conference, {RCIS} 2023,
+                  Corfu, Greece, May 23-26, 2023, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {476},
+  pages        = {87--102},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},
+  doi          = {10.1007/978-3-031-33080-3\_6},
+  timestamp    = {Fri, 02 Jun 2023 21:24:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:label xml:lang="en">Identifies intentional moments technologically mediated by human-made resources. Technology mediation cannot occur without the actor&apos;s engagement with human-made resources.
+
+This ObjectProperty is derived from the postphenomenolocal literature [verbeek2015toward].</rdfs:label>
+        <rdfs:label xml:lang="en">technologicallyMediates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#triggers">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Activity"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/caise/AdamoFG20,
+	author    = {Greta Adamo and
+	Chiara Di Francescomarino and
+	Chiara Ghidini},
+	title     = {Digging into Business Process Meta-models: {A} First Ontological Analysis},
+	booktitle = {Advanced Information Systems Engineering - 32nd International Conference,
+	CAiSE 2020, Grenoble, France, June 8-12, 2020, Proceedings},
+	series    = {Lect. Notes Comput. Sci.},
+	volume    = {12127},
+	pages     = {384--400},
+	publisher = {Springer},
+	year      = {2020},
+	doi       = {10.1007/978-3-030-49435-3\_24},
+	timestamp = {Wed, 03 Jun 2020 12:04:40 +0200},
+	biburl    = {https://dblp.org/rec/conf/caise/AdamoFG20.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Identifies activities triggered (caused by) intentional moments.
+
+This ObjectProperty is adapted from UFO-C.</rdfs:comment>
+        <rdfs:label xml:lang="en">triggers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ActionSituation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ActionSituation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#involves"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:bibliographicCitation xml:lang="en">@article{ostrom2011background,
+  title={Background on the institutional analysis and development framework},
+  author={Ostrom, Elinor},
+  journal={Policy studies journal},
+  volume={39},
+  number={1},
+  pages={7--27},
+  year={2011},
+  publisher={Wiley Online Library}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">ActionSituation is a social situation in which actors involved in a SESs setting interact and take decision, e.g. management of resources.
+
+
+ActionSituation is a component of SESF.</rdfs:comment>
+        <rdfs:label xml:lang="en">ActionSituation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Activity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Event"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Activity is an intentional event performed by an Agent.
+
+Activity is a synonim of Action in UFO.
+
+Activity is included in social-ecological system framework (SESF).</rdfs:comment>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Endurant"/>
+        <terms:bibliographicCitation xml:lang="en">@article{mcginnis2014social,
+  title={Social-ecological system framework: initial changes and continuing challenges},
+  author={McGinnis, Michael D and Ostrom, Elinor},
+  journal={Ecology and society},
+  volume={19},
+  number={2},
+  year={2014},
+  publisher={JSTOR}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Actor is an agentive entity.
+
+Actor is treated as a synonimus of Agent in UFO-C.
+
+Actor is included from social-ecological system framework (SESF).</rdfs:comment>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Belief -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Belief">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Belief is a type of IntentionalMoment.
+
+Belief is derived from UFO-C.</rdfs:comment>
+        <rdfs:label xml:lang="en">Belief</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Benefit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Benefit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Quality"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/edoc/SalesGGM17,
+  author       = {Tiago Prince Sales and
+                  Nicola Guarino and
+                  Giancarlo Guizzardi and
+                  John Mylopoulos},
+  editor       = {Sylvain Hall{\&apos;{e}} and
+                  Roger Villemaire and
+                  Robert Lagerstr{\&quot;{o}}m},
+  title        = {An Ontological Analysis of Value Propositions},
+  booktitle    = {21st {IEEE} International Enterprise Distributed Object Computing
+                  Conference, {EDOC} 2017, Quebec City, QC, Canada, October 10-13, 2017},
+  pages        = {184--193},
+  publisher    = {{IEEE} Computer Society},
+  year         = {2017},
+  url          = {https://doi.org/10.1109/EDOC.2017.32},
+  doi          = {10.1109/EDOC.2017.32},
+  timestamp    = {Fri, 24 Mar 2023 00:04:51 +0100},
+  biburl       = {https://dblp.org/rec/conf/edoc/SalesGGM17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/fois/AnderssonGJL16,
+  author       = {Birger Andersson and
+                  Nicola Guarino and
+                  Paul Johannesson and
+                  Barbara Livieri},
+  editor       = {Roberta Ferrario and
+                  Werner Kuhn},
+  title        = {Towards an Ontology of Value Ascription},
+  booktitle    = {Formal Ontology in Information Systems - Proceedings of the 9th International
+                  Conference, {FOIS} 2016, Annecy, France, July 6-9, 2016},
+  series       = {Frontiers in Artificial Intelligence and Applications},
+  volume       = {283},
+  pages        = {331--344},
+  publisher    = {{IOS} Press},
+  year         = {2016},
+  url          = {https://doi.org/10.3233/978-1-61499-660-6-331},
+  doi          = {10.3233/978-1-61499-660-6-331},
+  timestamp    = {Tue, 09 Feb 2021 08:32:32 +0100},
+  biburl       = {https://dblp.org/rec/conf/fois/AnderssonGJL16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Benefit is involved in the ValueAscription as relevant quality that the value entity has and that influence the IntentionalMoments of the Actors and SocialActors.
+
+The entity Benefit [DBLP:conf/edoc/SalesGGM17] has been the redesign of &quot;benefit-specific valuation&quot; [DBLP:conf/rcis/AdamoW22] ispired from [DBLP:conf/fois/AnderssonGJL16] to simplify the ontology and propose a version that is more adherent to ESs cascade.</rdfs:comment>
+        <rdfs:label xml:lang="en">Benefit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#CommitmentBasedService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#CommitmentBasedService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService"/>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment>CommitmentBasedService is a Service intentionally extracted and provided di actors.</rdfs:comment>
+        <rdfs:label>CommitmentBasedService</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Cultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Cultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService"/>
+        <terms:bibliographicCitation rdf:resource="https://cices.eu/"/>
+        <terms:bibliographicCitation rdf:resource="https://www.ipbes.net/glossary-tag/cultural-ecosystem-services"/>
+        <terms:bibliographicCitation xml:lang="en">@book{assessment2001millennium,
+  title={Millennium ecosystem assessment},
+  author={Assessment, Millennium Ecosystem},
+  year={2001},
+  publisher={Millennium Ecosystem Assessment}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Cultural services are non-physical ecosystem benefits that affets human&apos;s experiences and mental states.
+
+Cultural ecosystem services are included in both the Millennium Ecosystem Assessment (MA) and the Common International Classification of Ecosystem Services (CICES).</rdfs:comment>
+        <rdfs:label xml:lang="en">Cultural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Decision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Intention"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ontobras/GuizzardiCPG20,
+  author       = {Renata S. S. Guizzardi and
+                  Bruno Guimar{\~{a}}es Carneiro and
+                  Daniele Porello and
+                  Giancarlo Guizzardi},
+  editor       = {Daniela Lucas da Silva Lemos and
+                  Tiago Prince Sales and
+                  Maria Luiza Machado Campos and
+                  Sandro Rama Fiorini},
+  title        = {A Core Ontology on Decision Making},
+  booktitle    = {Proceedings of the {XIII} Seminar on Ontology Research in Brazil and
+                  {IV} Doctoral and Masters Consortium on Ontologies {(ONTOBRAS} 2020),
+                  Vit{\&apos;{o}}ria, Brazil, November 23-26, 2020},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {2728},
+  pages        = {9--21},
+  publisher    = {CEUR-WS.org},
+  year         = {2020},
+  url          = {https://ceur-ws.org/Vol-2728/paper1.pdf},
+  timestamp    = {Fri, 10 Mar 2023 16:22:15 +0100},
+  biburl       = {https://dblp.org/rec/conf/ontobras/GuizzardiCPG20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Decision in an Intention.
+
+Decision is derived from the Core Ontology on Decision Making based on UFO.</rdfs:comment>
+        <rdfs:label xml:lang="en">Decision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Deliberation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Deliberation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Activity"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ontobras/GuizzardiCPG20,
+  author       = {Renata S. S. Guizzardi and
+                  Bruno Guimar{\~{a}}es Carneiro and
+                  Daniele Porello and
+                  Giancarlo Guizzardi},
+  editor       = {Daniela Lucas da Silva Lemos and
+                  Tiago Prince Sales and
+                  Maria Luiza Machado Campos and
+                  Sandro Rama Fiorini},
+  title        = {A Core Ontology on Decision Making},
+  booktitle    = {Proceedings of the {XIII} Seminar on Ontology Research in Brazil and
+                  {IV} Doctoral and Masters Consortium on Ontologies {(ONTOBRAS} 2020),
+                  Vit{\&apos;{o}}ria, Brazil, November 23-26, 2020},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {2728},
+  pages        = {9--21},
+  publisher    = {CEUR-WS.org},
+  year         = {2020},
+  url          = {https://ceur-ws.org/Vol-2728/paper1.pdf},
+  timestamp    = {Fri, 10 Mar 2023 16:22:15 +0100},
+  biburl       = {https://dblp.org/rec/conf/ontobras/GuizzardiCPG20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Deliberation is an Activity performed by an Actor created by Intention and Decision, also in a social setting (i.e. SocialActor for a SocialDecision).
+
+Deliberation is derived from the Core Ontology on Decision Making based on UFO and is useful to model &quot;action situation&quot; in SESF.</rdfs:comment>
+        <rdfs:label xml:lang="en">Deliberation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Desire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Desire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Desire is a type of IntentionalMoment.
+
+Desire is derived from UFO-C.</rdfs:comment>
+        <rdfs:label xml:lang="en">Desire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Service"/>
+        <terms:bibliographicCitation>@article{haines2010links,
+  title={The links between biodiversity, ecosystem services and human well-being},
+  author={Haines-Young, Roy and Potschin, Marion and others},
+  journal={Ecosystem Ecology: a new synthesis},
+  volume={1},
+  pages={110--139},
+  year={2010},
+  publisher={Cambridge University Press Cambridge, UK}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@book{assessment2005ecosystems,
+  title={Ecosystems and human well-being},
+  author={Assessment, Millennium Ecosystem and others},
+  volume={5},
+  year={2005},
+  publisher={Island Press, Washington, DC}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment>EcosystemService is the benefit/outcome that natural ecosystems provide to humans, such as health and well-being, and then is useful for humans due to its value.
+
+EcosystemService is included in the ecosystem service (ESs) cascade.</rdfs:comment>
+        <rdfs:label>EcosystemService</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemStructure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+        <terms:bibliographicCitation xml:lang="en">@article{haines2010links,
+  title={The links between biodiversity, ecosystem services and human well-being},
+  author={Haines-Young, Roy and Potschin, Marion and others},
+  journal={Ecosystem Ecology: a new synthesis},
+  volume={1},
+  pages={110--139},
+  year={2010},
+  publisher={Cambridge University Press Cambridge, UK}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">EcosystemStructure has been defined in terms of composition, distribution and conditions that allow species to survive.
+
+This entity has been derived from the notion of &quot;function&quot; in ecosystem service (ESs) cascade.</rdfs:comment>
+        <rdfs:label xml:lang="en">EcosystemStructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#FunctionalRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#FunctionalRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Role"/>
+        <terms:bibliographicCitation xml:lang="en">@article{DBLP:journals/ao/GuizzardiBFPAS22,
+  author       = {Giancarlo Guizzardi and
+                  Alessander Botti Benevides and
+                  Claudenir M. Fonseca and
+                  Daniele Porello and
+                  Jo{\~{a}}o Paulo A. Almeida and
+                  Tiago Prince Sales},
+  title        = {{UFO:} Unified Foundational Ontology},
+  journal      = {Appl. Ontology},
+  volume       = {17},
+  number       = {1},
+  pages        = {167--210},
+  year         = {2022},
+  url          = {https://doi.org/10.3233/AO-210256},
+  doi          = {10.3233/AO-210256},
+  timestamp    = {Thu, 23 Jun 2022 20:04:51 +0200},
+  biburl       = {https://dblp.org/rec/journals/ao/GuizzardiBFPAS22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@article{haines2010links,
+  title={The links between biodiversity, ecosystem services and human well-being},
+  author={Haines-Young, Roy and Potschin, Marion and others},
+  journal={Ecosystem Ecology: a new synthesis},
+  volume={1},
+  pages={110--139},
+  year={2010},
+  publisher={Cambridge University Press Cambridge, UK}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/jowo/MizoguchiB17,
+  author       = {Riichiro Mizoguchi and
+                  Stefano Borgo},
+  editor       = {Stefano Borgo and
+                  Oliver Kutz and
+                  Frank Loebe and
+                  Fabian Neuhaus and
+                  Kemo Adrian and
+                  Mihailo Antovic and
+                  Valerio Basile and
+                  Martin Boeker and
+                  Diego Calvanese and
+                  Tommaso Caselli and
+                  Giorgio Colombo and
+                  Roberto Confalonieri and
+                  Laura Daniele and
+                  J{\&apos;{e}}r{\^{o}}me Euzenat and
+                  Antony Galton and
+                  Dagmar Gromann and
+                  Maria M. Hedblom and
+                  Heinrich Herre and
+                  Inge Hinterwaldner and
+                  Andrea Janes and
+                  Ludger Jansen and
+                  Kris Krois and
+                  Antonio Lieto and
+                  Claudio Masolo and
+                  Rafael Pe{\~{n}}aloza and
+                  Daniele Porello and
+                  Daniele Paolo Radicioni and
+                  Emilio M. Sanfilippo and
+                  Daniel Schober and
+                  Rossella Stufano and
+                  Amanda Vizedom},
+  title        = {A Preliminary Study of Functional Parts as Roles},
+  booktitle    = {Proceedings of the Joint Ontology Workshops 2017 Episode 3: The Tyrolean
+                  Autumn of Ontology, Bozen-Bolzano, Italy, September 21-23, 2017},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {2050},
+  publisher    = {CEUR-WS.org},
+  year         = {2017},
+  url          = {https://ceur-ws.org/Vol-2050/FOUST\_paper\_3.pdf},
+  timestamp    = {Fri, 10 Mar 2023 16:22:58 +0100},
+  biburl       = {https://dblp.org/rec/conf/jowo/MizoguchiB17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">FunctionalRole is a Role that captures of relations between systems and their components as functional unities.
+
+This entity has been derived from the notion of &quot;function&quot; in ecosystem service (ESs) cascade.</rdfs:comment>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="en">FunctionalRole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Proposition"/>
+        <terms:bibliographicCitation>@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Goal is the propositional (attitude) content of Intention.
+
+Goal is derived from UFO</rdfs:comment>
+        <rdfs:label xml:lang="en">Goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#GovernamentOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#GovernamentOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Organization"/>
+        <terms:bibliographicCitation>@article{hinkel2014enhancing,
+  title={Enhancing the Ostrom social-ecological system framework through formalization},
+  author={Hinkel, Jochen and Bots, Pieter WG and Schl{\&quot;u}ter, Maja},
+  journal={Ecology and Society},
+  volume={19},
+  number={3},
+  year={2014},
+  publisher={JSTOR}
+}</terms:bibliographicCitation>
+        <rdfs:comment>GovernamentOrganization is an organization managed by governments.
+
+GovernamentOrganization is a refinement of SESF proposed in [hinkel2014enhancing].</rdfs:comment>
+        <rdfs:label xml:lang="en">GovernamentOrganization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Governance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Governance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#CommitmentBasedService"/>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment>Governance ia an ValueActivity performed by actors that involves norms, commitments and decisions to achieve shared goals.
+
+This entity has been derived from the notion of &quot;governance&quot; in SESF.</rdfs:comment>
+        <rdfs:label>Governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">HumanMadeResource is a Resource intentionally designed by Agents, such as a dam.</rdfs:comment>
+        <rdfs:label xml:lang="en">HumanMadeResource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResourceAmountofMatter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResourceAmountofMatter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ekaw/GangemiGMOS02,
+  author       = {Aldo Gangemi and
+                  Nicola Guarino and
+                  Claudio Masolo and
+                  Alessandro Oltramari and
+                  Luc Schneider},
+  editor       = {Asunci{\&apos;{o}}n G{\&apos;{o}}mez{-}P{\&apos;{e}}rez and
+                  V. Richard Benjamins},
+  title        = {Sweetening Ontologies with {DOLCE}},
+  booktitle    = {Knowledge Engineering and Knowledge Management. Ontologies and the
+                  Semantic Web, 13th International Conference, {EKAW} 2002, Siguenza,
+                  Spain, October 1-4, 2002, Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {2473},
+  pages        = {166--181},
+  publisher    = {Springer},
+  year         = {2002},
+  url          = {https://doi.org/10.1007/3-540-45810-7\_18},
+  doi          = {10.1007/3-540-45810-7\_18},
+  timestamp    = {Tue, 14 May 2019 10:00:39 +0200},
+  biburl       = {https://dblp.org/rec/conf/ekaw/GangemiGMOS02.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ifip5-1/SanfilippoBBGTR18,
+  author       = {Emilio M. Sanfilippo and
+                  Sergio Benavent and
+                  Stefano Borgo and
+                  Nicola Guarino and
+                  Nicolas Troquard and
+                  Fernando Romero and
+                  Pedro Rosado and
+                  Lorenzo Solano and
+                  Farouk Belkadi and
+                  Alain Bernard},
+  editor       = {Paolo Chiabert and
+                  Abdelaziz Bouras and
+                  Fr{\&apos;{e}}d{\&apos;{e}}ric No{\&quot;{e}}l and
+                  Jos{\&apos;{e}} R{\&apos;{\i}}os},
+  title        = {Modeling Manufacturing Resources: An Ontological Approach},
+  booktitle    = {Product Lifecycle Management to Support Industry 4.0 - 15th {IFIP}
+                  {WG} 5.1 International Conference, {PLM} 2018, Turin, Italy, July
+                  2-4, 2018, Proceedings},
+  series       = {{IFIP} Advances in Information and Communication Technology},
+  volume       = {540},
+  pages        = {304--313},
+  publisher    = {Springer},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-01614-2\_28},
+  doi          = {10.1007/978-3-030-01614-2\_28},
+  timestamp    = {Thu, 07 Sep 2023 15:53:24 +0200},
+  biburl       = {https://dblp.org/rec/conf/ifip5-1/SanfilippoBBGTR18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">HumanMadeResourceAmountofMatter is a HumanMadeResource with no unity and mereologically invariant, such as the Bohrium.</rdfs:comment>
+        <rdfs:label xml:lang="en">HumanMadeResourceAmountofMatter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResourcePhysicalObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResourcePhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#HumanMadeResource"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ekaw/GangemiGMOS02,
+  author       = {Aldo Gangemi and
+                  Nicola Guarino and
+                  Claudio Masolo and
+                  Alessandro Oltramari and
+                  Luc Schneider},
+  editor       = {Asunci{\&apos;{o}}n G{\&apos;{o}}mez{-}P{\&apos;{e}}rez and
+                  V. Richard Benjamins},
+  title        = {Sweetening Ontologies with {DOLCE}},
+  booktitle    = {Knowledge Engineering and Knowledge Management. Ontologies and the
+                  Semantic Web, 13th International Conference, {EKAW} 2002, Siguenza,
+                  Spain, October 1-4, 2002, Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {2473},
+  pages        = {166--181},
+  publisher    = {Springer},
+  year         = {2002},
+  url          = {https://doi.org/10.1007/3-540-45810-7\_18},
+  doi          = {10.1007/3-540-45810-7\_18},
+  timestamp    = {Tue, 14 May 2019 10:00:39 +0200},
+  biburl       = {https://dblp.org/rec/conf/ekaw/GangemiGMOS02.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ifip5-1/SanfilippoBBGTR18,
+  author       = {Emilio M. Sanfilippo and
+                  Sergio Benavent and
+                  Stefano Borgo and
+                  Nicola Guarino and
+                  Nicolas Troquard and
+                  Fernando Romero and
+                  Pedro Rosado and
+                  Lorenzo Solano and
+                  Farouk Belkadi and
+                  Alain Bernard},
+  editor       = {Paolo Chiabert and
+                  Abdelaziz Bouras and
+                  Fr{\&apos;{e}}d{\&apos;{e}}ric No{\&quot;{e}}l and
+                  Jos{\&apos;{e}} R{\&apos;{\i}}os},
+  title        = {Modeling Manufacturing Resources: An Ontological Approach},
+  booktitle    = {Product Lifecycle Management to Support Industry 4.0 - 15th {IFIP}
+                  {WG} 5.1 International Conference, {PLM} 2018, Turin, Italy, July
+                  2-4, 2018, Proceedings},
+  series       = {{IFIP} Advances in Information and Communication Technology},
+  volume       = {540},
+  pages        = {304--313},
+  publisher    = {Springer},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-01614-2\_28},
+  doi          = {10.1007/978-3-030-01614-2\_28},
+  timestamp    = {Thu, 07 Sep 2023 15:53:24 +0200},
+  biburl       = {https://dblp.org/rec/conf/ifip5-1/SanfilippoBBGTR18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">HumanMadeResourcePhysicalObject is a physical HumanMadeResource with unity, such as a plow.</rdfs:comment>
+        <rdfs:label xml:lang="en">HumanMadeResourcePhysicalObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#InformationObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#InformationObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialObject"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW23,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Selmin Nurcan and
+                  Andreas L. Opdahl and
+                  Haralambos Mouratidis and
+                  Aggeliki Tsohou},
+  title        = {The Omnipresent Role of Technology in Social-Ecological Systems -
+                  Ontological Discussion and Updated Integrated Framework},
+  booktitle    = {Research Challenges in Information Science: Information Science and
+                  the Connected World - 17th International Conference, {RCIS} 2023,
+                  Corfu, Greece, May 23-26, 2023, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {476},
+  pages        = {87--102},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},
+  doi          = {10.1007/978-3-031-33080-3\_6},
+  timestamp    = {Fri, 02 Jun 2023 21:24:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">InformationObject is an information content without its physical realization
+[DOLCE+DnS Ultralite].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <rdfs:label xml:lang="en">InformationObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Intention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Intention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Intention is a type of IntentionalMoment.
+
+Intention is derived from UFO-C.</rdfs:comment>
+        <rdfs:label xml:lang="en">Intention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">IntentionalMoment inheres to Actor.
+
+IntentionalMoment derives from UFO-C.
+
+IntentionalMoment is key to model &quot;action situation&quot; in SESF.</rdfs:comment>
+        <rdfs:label xml:lang="en">IntentionalMoment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#MonetaryValueAscription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#MonetaryValueAscription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValuationRelationship"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonMonetaryValueAscription"/>
+        <terms:bibliographicCitation>@article{liu2010valuing,
+  title={Valuing ecosystem services: theory, practice, and the need for a transdisciplinary synthesis},
+  author={Liu, Shuang and Costanza, Robert and Farber, Stephen and Troy, Austin},
+  journal={Annals of the New York Academy of Sciences},
+  volume={1185},
+  number={1},
+  pages={54--78},
+  year={2010},
+  publisher={Wiley Online Library}
+}</terms:bibliographicCitation>
+        <rdfs:comment>MonetaryValueAscription is a ValueAscription that pertains monetary valuation (e.g. market value) of value entities, such as following the System of National Accounts (SNA).
+
+MonetaryValueAscription is derived from the literature of ecosystem services.</rdfs:comment>
+        <rdfs:label xml:lang="en">MonetaryValueAscription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalFunctionalRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalFunctionalRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#FunctionalRole"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">SocialFunctionalRole is a FunctionalRole valid in a natural context.
+
+The distinction between social and natural roles can be found also in (arp2008function)</rdfs:comment>
+        <rdfs:label xml:lang="en">NaturalFunctionalRole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">NaturalResource is a Resource that has not been intentionally designed by Agent and that can be found in nature, such as seafood.</rdfs:comment>
+        <rdfs:label xml:lang="en">NaturalResource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResourceAmountofMatter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResourceAmountofMatter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResource"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ekaw/GangemiGMOS02,
+  author       = {Aldo Gangemi and
+                  Nicola Guarino and
+                  Claudio Masolo and
+                  Alessandro Oltramari and
+                  Luc Schneider},
+  editor       = {Asunci{\&apos;{o}}n G{\&apos;{o}}mez{-}P{\&apos;{e}}rez and
+                  V. Richard Benjamins},
+  title        = {Sweetening Ontologies with {DOLCE}},
+  booktitle    = {Knowledge Engineering and Knowledge Management. Ontologies and the
+                  Semantic Web, 13th International Conference, {EKAW} 2002, Siguenza,
+                  Spain, October 1-4, 2002, Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {2473},
+  pages        = {166--181},
+  publisher    = {Springer},
+  year         = {2002},
+  url          = {https://doi.org/10.1007/3-540-45810-7\_18},
+  doi          = {10.1007/3-540-45810-7\_18},
+  timestamp    = {Tue, 14 May 2019 10:00:39 +0200},
+  biburl       = {https://dblp.org/rec/conf/ekaw/GangemiGMOS02.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ifip5-1/SanfilippoBBGTR18,
+  author       = {Emilio M. Sanfilippo and
+                  Sergio Benavent and
+                  Stefano Borgo and
+                  Nicola Guarino and
+                  Nicolas Troquard and
+                  Fernando Romero and
+                  Pedro Rosado and
+                  Lorenzo Solano and
+                  Farouk Belkadi and
+                  Alain Bernard},
+  editor       = {Paolo Chiabert and
+                  Abdelaziz Bouras and
+                  Fr{\&apos;{e}}d{\&apos;{e}}ric No{\&quot;{e}}l and
+                  Jos{\&apos;{e}} R{\&apos;{\i}}os},
+  title        = {Modeling Manufacturing Resources: An Ontological Approach},
+  booktitle    = {Product Lifecycle Management to Support Industry 4.0 - 15th {IFIP}
+                  {WG} 5.1 International Conference, {PLM} 2018, Turin, Italy, July
+                  2-4, 2018, Proceedings},
+  series       = {{IFIP} Advances in Information and Communication Technology},
+  volume       = {540},
+  pages        = {304--313},
+  publisher    = {Springer},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-01614-2\_28},
+  doi          = {10.1007/978-3-030-01614-2\_28},
+  timestamp    = {Thu, 07 Sep 2023 15:53:24 +0200},
+  biburl       = {https://dblp.org/rec/conf/ifip5-1/SanfilippoBBGTR18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">NaturalResourceAmountofMatter is a NaturalResource with no unity and mereologically invariant, such as water and gold.</rdfs:comment>
+        <rdfs:label xml:lang="en">NaturalResourceAmountofMatter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResourcePhysicalObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResourcePhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NaturalResource"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ekaw/GangemiGMOS02,
+  author       = {Aldo Gangemi and
+                  Nicola Guarino and
+                  Claudio Masolo and
+                  Alessandro Oltramari and
+                  Luc Schneider},
+  editor       = {Asunci{\&apos;{o}}n G{\&apos;{o}}mez{-}P{\&apos;{e}}rez and
+                  V. Richard Benjamins},
+  title        = {Sweetening Ontologies with {DOLCE}},
+  booktitle    = {Knowledge Engineering and Knowledge Management. Ontologies and the
+                  Semantic Web, 13th International Conference, {EKAW} 2002, Siguenza,
+                  Spain, October 1-4, 2002, Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {2473},
+  pages        = {166--181},
+  publisher    = {Springer},
+  year         = {2002},
+  url          = {https://doi.org/10.1007/3-540-45810-7\_18},
+  doi          = {10.1007/3-540-45810-7\_18},
+  timestamp    = {Tue, 14 May 2019 10:00:39 +0200},
+  biburl       = {https://dblp.org/rec/conf/ekaw/GangemiGMOS02.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ifip5-1/SanfilippoBBGTR18,
+  author       = {Emilio M. Sanfilippo and
+                  Sergio Benavent and
+                  Stefano Borgo and
+                  Nicola Guarino and
+                  Nicolas Troquard and
+                  Fernando Romero and
+                  Pedro Rosado and
+                  Lorenzo Solano and
+                  Farouk Belkadi and
+                  Alain Bernard},
+  editor       = {Paolo Chiabert and
+                  Abdelaziz Bouras and
+                  Fr{\&apos;{e}}d{\&apos;{e}}ric No{\&quot;{e}}l and
+                  Jos{\&apos;{e}} R{\&apos;{\i}}os},
+  title        = {Modeling Manufacturing Resources: An Ontological Approach},
+  booktitle    = {Product Lifecycle Management to Support Industry 4.0 - 15th {IFIP}
+                  {WG} 5.1 International Conference, {PLM} 2018, Turin, Italy, July
+                  2-4, 2018, Proceedings},
+  series       = {{IFIP} Advances in Information and Communication Technology},
+  volume       = {540},
+  pages        = {304--313},
+  publisher    = {Springer},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-01614-2\_28},
+  doi          = {10.1007/978-3-030-01614-2\_28},
+  timestamp    = {Thu, 07 Sep 2023 15:53:24 +0200},
+  biburl       = {https://dblp.org/rec/conf/ifip5-1/SanfilippoBBGTR18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">NaturalResourcePhysicalObject is a physical NaturalResource with unity, such as maize.</rdfs:comment>
+        <rdfs:label xml:lang="en">NaturalResourcePhysicalObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonFunctionalRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonFunctionalRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Role"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">NonFunctionalRole is a Role that exists in a system, yet its existence is not essential for the system to function.</rdfs:comment>
+        <rdfs:label xml:lang="en">NonFunctionalRole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonGovernamentOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonGovernamentOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Organization"/>
+        <terms:bibliographicCitation rdf:resource="https://www.britannica.com/topic/nongovernmental-organization"/>
+        <terms:bibliographicCitation xml:lang="en">@article{hinkel2014enhancing,
+  title={Enhancing the Ostrom social-ecological system framework through formalization},
+  author={Hinkel, Jochen and Bots, Pieter WG and Schl{\&quot;u}ter, Maja},
+  journal={Ecology and Society},
+  volume={19},
+  number={3},
+  year={2014},
+  publisher={JSTOR}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">NonGovernamentOrganization is an organization, often non-profit, usually non-managed by governments, for example, the United Nations.
+
+NonGovernamentOrganization is a refinement of SESF proposed in [hinkel2014enhancing].</rdfs:comment>
+        <rdfs:label xml:lang="en">NonGovernamentOrganization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonMonetaryValueAscription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#NonMonetaryValueAscription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValuationRelationship"/>
+        <terms:bibliographicCitation>@article{liu2010valuing,
+  title={Valuing ecosystem services: theory, practice, and the need for a transdisciplinary synthesis},
+  author={Liu, Shuang and Costanza, Robert and Farber, Stephen and Troy, Austin},
+  journal={Annals of the New York Academy of Sciences},
+  volume={1185},
+  number={1},
+  pages={54--78},
+  year={2010},
+  publisher={Wiley Online Library}
+}</terms:bibliographicCitation>
+        <rdfs:comment>NonMonetaryValueAscription is a ValueAscription that pertains non monetary valuation (e.g. measures of attitudes) of value entities, such as EcosystemService aestetics.
+
+NonMonetaryValueAscription is derived from the literature of ecosystem services.</rdfs:comment>
+        <rdfs:label xml:lang="en">NonMonetaryValueAscription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Norm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Norm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialObject"/>
+        <terms:bibliographicCitation xml:lang="en">@article{bottazzi2009preliminaries,
+  title={Preliminaries to a DOLCE ontology of organisations},
+  author={Bottazzi, Emanuele and Ferrario, Roberta},
+  journal={International Journal of Business Process Integration and Management},
+  volume={4},
+  number={4},
+  pages={225--238},
+  year={2009},
+  publisher={Inderscience Publishers}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Norm is a description created and recognized by SocialAgents, such as a law or a social convention.
+
+Norm is derived from DOLCE and is similar to NormativeDescription in UFO-C.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <rdfs:label xml:lang="en">Norm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialActor"/>
+        <terms:bibliographicCitation xml:lang="en">@article{bottazzi2009preliminaries,
+  title={Preliminaries to a DOLCE ontology of organisations},
+  author={Bottazzi, Emanuele and Ferrario, Roberta},
+  journal={International Journal of Business Process Integration and Management},
+  volume={4},
+  number={4},
+  pages={225--238},
+  year={2009},
+  publisher={Inderscience Publishers}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW23,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Selmin Nurcan and
+                  Andreas L. Opdahl and
+                  Haralambos Mouratidis and
+                  Aggeliki Tsohou},
+  title        = {The Omnipresent Role of Technology in Social-Ecological Systems -
+                  Ontological Discussion and Updated Integrated Framework},
+  booktitle    = {Research Challenges in Information Science: Information Science and
+                  the Connected World - 17th International Conference, {RCIS} 2023,
+                  Corfu, Greece, May 23-26, 2023, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {476},
+  pages        = {87--102},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},
+  doi          = {10.1007/978-3-031-33080-3\_6},
+  timestamp    = {Fri, 02 Jun 2023 21:24:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Organization is a SocialActor that is created, recognized and managed by communities of Actors having roles.
+
+Organization is derived from UFO-C and is closely related (albeit different) from Organization in DOLCE.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Plan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#InformationObject"/>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/ifip5-1/SanfilippoBBGTR18,
+  author       = {Emilio M. Sanfilippo and
+                  Sergio Benavent and
+                  Stefano Borgo and
+                  Nicola Guarino and
+                  Nicolas Troquard and
+                  Fernando Romero and
+                  Pedro Rosado and
+                  Lorenzo Solano and
+                  Farouk Belkadi and
+                  Alain Bernard},
+  editor       = {Paolo Chiabert and
+                  Abdelaziz Bouras and
+                  Fr{\&apos;{e}}d{\&apos;{e}}ric No{\&quot;{e}}l and
+                  Jos{\&apos;{e}} R{\&apos;{\i}}os},
+  title        = {Modeling Manufacturing Resources: An Ontological Approach},
+  booktitle    = {Product Lifecycle Management to Support Industry 4.0 - 15th {IFIP}
+                  {WG} 5.1 International Conference, {PLM} 2018, Turin, Italy, July
+                  2-4, 2018, Proceedings},
+  series       = {{IFIP} Advances in Information and Communication Technology},
+  volume       = {540},
+  pages        = {304--313},
+  publisher    = {Springer},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-01614-2\_28},
+  doi          = {10.1007/978-3-030-01614-2\_28},
+  timestamp    = {Thu, 07 Sep 2023 15:53:24 +0200},
+  biburl       = {https://dblp.org/rec/conf/ifip5-1/SanfilippoBBGTR18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Plan is an InformationObject that describes situations or a set of activities and their organisation to achieve a certain goal.
+
+Plan is adapted from [DBLP:conf/ifip5-1/SanfilippoBBGTR18].</rdfs:comment>
+        <rdfs:label xml:lang="en">Plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Plan"/>
+        <terms:bibliographicCitation rdf:resource="https://dictionary.cambridge.org/dictionary/english/policy"/>
+        <terms:bibliographicCitation>@article{stephan2019introduction,
+  title={An introduction to polycentricity and governance},
+  author={Stephan, Mark and Marshall, Graham and McGinnis, Michael},
+  journal={Governing complexity: Analyzing and applying polycentricity},
+  volume={1431487},
+  pages={21--44},
+  year={2019},
+  publisher={Cambridge University Press Cambridge}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Policy is an agreed plan of action formally stipulated by a group of people, e.g. organisations, institutions, governaments, or a kind of document that communicate such an agreement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Policy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Preference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Preference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/fois/AnderssonGJL16,
+  author       = {Birger Andersson and
+                  Nicola Guarino and
+                  Paul Johannesson and
+                  Barbara Livieri},
+  editor       = {Roberta Ferrario and
+                  Werner Kuhn},
+  title        = {Towards an Ontology of Value Ascription},
+  booktitle    = {Formal Ontology in Information Systems - Proceedings of the 9th International
+                  Conference, {FOIS} 2016, Annecy, France, July 6-9, 2016},
+  series       = {Frontiers in Artificial Intelligence and Applications},
+  volume       = {283},
+  pages        = {331--344},
+  publisher    = {{IOS} Press},
+  year         = {2016},
+  url          = {https://doi.org/10.3233/978-1-61499-660-6-331},
+  doi          = {10.3233/978-1-61499-660-6-331},
+  timestamp    = {Tue, 09 Feb 2021 08:32:32 +0100},
+  biburl       = {https://dblp.org/rec/conf/fois/AnderssonGJL16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ontobras/GuizzardiCPG20,
+  author       = {Renata S. S. Guizzardi and
+                  Bruno Guimar{\~{a}}es Carneiro and
+                  Daniele Porello and
+                  Giancarlo Guizzardi},
+  editor       = {Daniela Lucas da Silva Lemos and
+                  Tiago Prince Sales and
+                  Maria Luiza Machado Campos and
+                  Sandro Rama Fiorini},
+  title        = {A Core Ontology on Decision Making},
+  booktitle    = {Proceedings of the {XIII} Seminar on Ontology Research in Brazil and
+                  {IV} Doctoral and Masters Consortium on Ontologies {(ONTOBRAS} 2020),
+                  Vit{\&apos;{o}}ria, Brazil, November 23-26, 2020},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {2728},
+  pages        = {9--21},
+  publisher    = {CEUR-WS.org},
+  year         = {2020},
+  url          = {https://ceur-ws.org/Vol-2728/paper1.pdf},
+  timestamp    = {Fri, 10 Mar 2023 16:22:15 +0100},
+  biburl       = {https://dblp.org/rec/conf/ontobras/GuizzardiCPG20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Prefernce is a contextual attribution of value that follows an ordering.
+
+There is a Core Ontology on Decision Making based on UFO in which Preference is trated as the truthmaker of a ternary relationship. However SESsION at the moment offers a simplied version of it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Preference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Proposition">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividual"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Proposition, in general, is a T/F bearer.
+
+Proposition is derived from UFO.</rdfs:comment>
+        <rdfs:label xml:lang="en">Proposition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://plato.stanford.edu/entries/propositions/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Provisioning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Provisioning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService"/>
+        <terms:bibliographicCitation rdf:resource="https://cices.eu/"/>
+        <terms:bibliographicCitation rdf:resource="https://www.ipbes.net/node/41751"/>
+        <terms:bibliographicCitation xml:lang="en">@book{assessment2001millennium,
+  title={Millennium ecosystem assessment},
+  author={Assessment, Millennium Ecosystem},
+  year={2001},
+  publisher={Millennium Ecosystem Assessment}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Provisioning services are biotic and abiotic producs derived from natural ecosystems, such as food, water, and wood.
+
+Provisioning is derived from the Millennium Ecosystem Assessment (MA) and the Common International Classification of Ecosystem Services (CICES).</rdfs:comment>
+        <rdfs:label xml:lang="en">Provisioning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Regulating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Regulating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#EcosystemService"/>
+        <terms:bibliographicCitation rdf:resource="https://cices.eu/"/>
+        <terms:bibliographicCitation xml:lang="en">@article{sutherland2018undervalued,
+  title={Undervalued and under pressure: A plea for greater attention toward regulating ecosystem services},
+  author={Sutherland, Ira J and Villamagna, Amy M and Dallaire, Camille Ouellet and Bennett, Elena M and Chin, Andrew TM and Yeung, Alex CY and Lamothe, Karl A and Tomscha, Stephanie A and Cormier, Roland},
+  journal={Ecological Indicators},
+  volume={94},
+  pages={23--32},
+  year={2018},
+  publisher={Elsevier}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@book{assessment2001millennium,
+  title={Millennium ecosystem assessment},
+  author={Assessment, Millennium Ecosystem},
+  year={2001},
+  publisher={Millennium Ecosystem Assessment}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Regulating services are those natural proesses that maintain ecosystem conditions, such as smell reduction, erosion control, 
+
+While the Millennium Ecosystem Assessment includes Regulating services, the Common International Classification of Ecosystem Services couples Regulation and Maintenance.</rdfs:comment>
+        <rdfs:label xml:lang="en">Regulating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Role"/>
+        <terms:bibliographicCitation xml:lang="en">@article{azevedo2015modeling,
+  title={Modeling resources and capabilities in enterprise architecture: A well-founded ontology-based proposal for ArchiMate},
+  author={Azevedo, Carlos LB and Iacob, Maria-Eugenia and Almeida, Jo{\~a}o Paulo A and van Sinderen, Marten and Pires, Lu{\&apos;\i}s Ferreira and Guizzardi, Giancarlo},
+  journal={Information systems},
+  volume={54},
+  pages={235--262},
+  year={2015},
+  publisher={Elsevier}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@article{mcginnis2014social,
+  title={Social-ecological system framework: initial changes and continuing challenges},
+  author={McGinnis, Michael D and Ostrom, Elinor},
+  journal={Ecology and society},
+  volume={19},
+  number={2},
+  year={2014},
+  publisher={JSTOR}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/caise/AdamoFG20,
+	author    = {Greta Adamo and
+	Chiara Di Francescomarino and
+	Chiara Ghidini},
+	title     = {Digging into Business Process Meta-models: {A} First Ontological Analysis},
+	booktitle = {Advanced Information Systems Engineering - 32nd International Conference,
+	CAiSE 2020, Grenoble, France, June 8-12, 2020, Proceedings},
+	series    = {Lect. Notes Comput. Sci.},
+	volume    = {12127},
+	pages     = {384--400},
+	publisher = {Springer},
+	year      = {2020},
+	doi       = {10.1007/978-3-030-49435-3\_24},
+	timestamp = {Wed, 03 Jun 2020 12:04:40 +0200},
+	biburl    = {https://dblp.org/rec/conf/caise/AdamoFG20.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/ifip5-1/SanfilippoBBGTR18,
+  author       = {Emilio M. Sanfilippo and
+                  Sergio Benavent and
+                  Stefano Borgo and
+                  Nicola Guarino and
+                  Nicolas Troquard and
+                  Fernando Romero and
+                  Pedro Rosado and
+                  Lorenzo Solano and
+                  Farouk Belkadi and
+                  Alain Bernard},
+  editor       = {Paolo Chiabert and
+                  Abdelaziz Bouras and
+                  Fr{\&apos;{e}}d{\&apos;{e}}ric No{\&quot;{e}}l and
+                  Jos{\&apos;{e}} R{\&apos;{\i}}os},
+  title        = {Modeling Manufacturing Resources: An Ontological Approach},
+  booktitle    = {Product Lifecycle Management to Support Industry 4.0 - 15th {IFIP}
+                  {WG} 5.1 International Conference, {PLM} 2018, Turin, Italy, July
+                  2-4, 2018, Proceedings},
+  series       = {{IFIP} Advances in Information and Communication Technology},
+  volume       = {540},
+  pages        = {304--313},
+  publisher    = {Springer},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-01614-2\_28},
+  doi          = {10.1007/978-3-030-01614-2\_28},
+  timestamp    = {Thu, 07 Sep 2023 15:53:24 +0200},
+  biburl       = {https://dblp.org/rec/conf/ifip5-1/SanfilippoBBGTR18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{fadel1994generic,
+  title={A generic enterprise resource ontology},
+  author={Fadel, Fadi George and Fox, Mark S and Gruninger, Michael},
+  booktitle={Proceedings of 3rd IEEE workshop on enabling technologies: infrastructure for collaborative enterprises},
+  pages={117--128},
+  year={1994},
+  organization={IEEE}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Resource is the role that objects plays in the context of activities or plans to achieve goals.
+
+
+This entity has been included in the social-ecological system framework (SESF).</rdfs:comment>
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ResourceSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ResourceSystem">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+        <terms:bibliographicCitation xml:lang="en">@article{mcginnis2014social,
+  title={Social-ecological system framework: initial changes and continuing challenges},
+  author={McGinnis, Michael D and Ostrom, Elinor},
+  journal={Ecology and society},
+  volume={19},
+  number={2},
+  year={2014},
+  publisher={JSTOR}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW23,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Selmin Nurcan and
+                  Andreas L. Opdahl and
+                  Haralambos Mouratidis and
+                  Aggeliki Tsohou},
+  title        = {The Omnipresent Role of Technology in Social-Ecological Systems -
+                  Ontological Discussion and Updated Integrated Framework},
+  booktitle    = {Research Challenges in Information Science: Information Science and
+                  the Connected World - 17th International Conference, {RCIS} 2023,
+                  Corfu, Greece, May 23-26, 2023, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {476},
+  pages        = {87--102},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},
+  doi          = {10.1007/978-3-031-33080-3\_6},
+  timestamp    = {Fri, 02 Jun 2023 21:24:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">ResourceSystem is composed of Resource.
+
+ResourceSystem is included in the social-ecological system framwork (SESF)</rdfs:comment>
+        <rdfs:label xml:lang="en">ResourceSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialObject"/>
+        <terms:bibliographicCitation xml:lang="en">@article{bottazzi2009preliminaries,
+  title={Preliminaries to a DOLCE ontology of organisations},
+  author={Bottazzi, Emanuele and Ferrario, Roberta},
+  journal={International Journal of Business Process Integration and Management},
+  volume={4},
+  number={4},
+  pages={225--238},
+  year={2009},
+  publisher={Inderscience Publishers}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Role is a contextual entity that can be played by different objects, for example an assistent professor and a sister.
+
+Role is derived from DOLCE.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueBearer"/>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">Service is a ValueBearer played by activities that are intentionally perfomed by Actor or unintentionally perfomed by natural ecosystems.</rdfs:comment>
+        <rdfs:label>Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Actor"/>
+        <terms:bibliographicCitation xml:lang="en">@article{bottazzi2009preliminaries,
+  title={Preliminaries to a DOLCE ontology of organisations},
+  author={Bottazzi, Emanuele and Ferrario, Roberta},
+  journal={International Journal of Business Process Integration and Management},
+  volume={4},
+  number={4},
+  pages={225--238},
+  year={2009},
+  publisher={Inderscience Publishers}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">SocialActor is an Actor that has the capability to act and recognition by a other Actor.
+
+SocialActor is synonimus of SocialAgent in UFO-C and is closely related (albeit different) from SocialAgent in DOLCE.</rdfs:comment>
+        <rdfs:label xml:lang="en">SocialActor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialCommitment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialCommitment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialMoment"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">SocialCommitment is a type of SocialMoment, such as a promise.
+
+SocialCommitment is derived from UFO-C.</rdfs:comment>
+        <rdfs:label xml:lang="en">SocialCommitment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialDecision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialDecision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialCommitment"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW23,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Selmin Nurcan and
+                  Andreas L. Opdahl and
+                  Haralambos Mouratidis and
+                  Aggeliki Tsohou},
+  title        = {The Omnipresent Role of Technology in Social-Ecological Systems -
+                  Ontological Discussion and Updated Integrated Framework},
+  booktitle    = {Research Challenges in Information Science: Information Science and
+                  the Connected World - 17th International Conference, {RCIS} 2023,
+                  Corfu, Greece, May 23-26, 2023, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {476},
+  pages        = {87--102},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-33080-3\_6},
+  doi          = {10.1007/978-3-031-33080-3\_6},
+  timestamp    = {Fri, 02 Jun 2023 21:24:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">SocialDecision is a SocialCommitment recognised and established by a SocialActor.</rdfs:comment>
+        <rdfs:label xml:lang="en">SocialDecision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialFunctionalRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialFunctionalRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#FunctionalRole"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">SocialFunctionalRole is a FunctionalRole valid in a social context.
+
+The distinction between social and natural roles can be found also in (arp2008function).</rdfs:comment>
+        <rdfs:label xml:lang="en">SocialFunctionalRole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialMoment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialMoment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#IntentionalMoment"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">SocialMoment is an IntentionalMoment created by a social act.
+
+SocialMoment is derived from UFO-C</rdfs:comment>
+        <rdfs:label xml:lang="en">SocialMoment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#SocialObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Object"/>
+        <terms:bibliographicCitation xml:lang="en">@article{bottazzi2009preliminaries,
+  title={Preliminaries to a DOLCE ontology of organisations},
+  author={Bottazzi, Emanuele and Ferrario, Roberta},
+  journal={International Journal of Business Process Integration and Management},
+  volume={4},
+  number={4},
+  pages={225--238},
+  year={2009},
+  publisher={Inderscience Publishers}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{guizzardi2008grounding,
+  title={Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology.},
+  author={Guizzardi, Giancarlo and de Almeida Falbo, Ricardo and Guizzardi, Renata SS},
+  booktitle={CIbSE},
+  pages={127--140},
+  year={2008},
+  organization={Citeseer}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">SocialObject is an Object created by communities, such as norms and money.</rdfs:comment>
+        <rdfs:label xml:lang="en">SocialObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValuationRelationship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValuationRelationship">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Relator"/>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/edoc/SalesGGM17,
+  author       = {Tiago Prince Sales and
+                  Nicola Guarino and
+                  Giancarlo Guizzardi and
+                  John Mylopoulos},
+  editor       = {Sylvain Hall{\&apos;{e}} and
+                  Roger Villemaire and
+                  Robert Lagerstr{\&quot;{o}}m},
+  title        = {An Ontological Analysis of Value Propositions},
+  booktitle    = {21st {IEEE} International Enterprise Distributed Object Computing
+                  Conference, {EDOC} 2017, Quebec City, QC, Canada, October 10-13, 2017},
+  pages        = {184--193},
+  publisher    = {{IEEE} Computer Society},
+  year         = {2017},
+  url          = {https://doi.org/10.1109/EDOC.2017.32},
+  doi          = {10.1109/EDOC.2017.32},
+  timestamp    = {Fri, 24 Mar 2023 00:04:51 +0100},
+  biburl       = {https://dblp.org/rec/conf/edoc/SalesGGM17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/fois/AnderssonGJL16,
+  author       = {Birger Andersson and
+                  Nicola Guarino and
+                  Paul Johannesson and
+                  Barbara Livieri},
+  editor       = {Roberta Ferrario and
+                  Werner Kuhn},
+  title        = {Towards an Ontology of Value Ascription},
+  booktitle    = {Formal Ontology in Information Systems - Proceedings of the 9th International
+                  Conference, {FOIS} 2016, Annecy, France, July 6-9, 2016},
+  series       = {Frontiers in Artificial Intelligence and Applications},
+  volume       = {283},
+  pages        = {331--344},
+  publisher    = {{IOS} Press},
+  year         = {2016},
+  url          = {https://doi.org/10.3233/978-1-61499-660-6-331},
+  doi          = {10.3233/978-1-61499-660-6-331},
+  timestamp    = {Tue, 09 Feb 2021 08:32:32 +0100},
+  biburl       = {https://dblp.org/rec/conf/fois/AnderssonGJL16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment>ValueAscription is a Relator (reified relation) between actors and value entities, such as ValueObject and Service
+
+ValueAcrription has been redesigned from the entity of &quot;valuation relationship&quot; [DBLP:conf/rcis/AdamoW22] inspired by [DBLP:conf/fois/AnderssonGJL16]. ValueAcrription follows the ontological analysis proposed in [DBLP:conf/edoc/SalesGGM17].
+
+ValueAscription and related entites, e.g. ValueEntity, represent the notion of &quot;value&quot; in ESs cascade.
+
+ValueAscription is key to model &quot;action situation&quot; in SESF.</rdfs:comment>
+        <rdfs:label>ValueAscription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueBearer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueBearer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#Role"/>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/edoc/SalesGGM17,
+  author       = {Tiago Prince Sales and
+                  Nicola Guarino and
+                  Giancarlo Guizzardi and
+                  John Mylopoulos},
+  editor       = {Sylvain Hall{\&apos;{e}} and
+                  Roger Villemaire and
+                  Robert Lagerstr{\&quot;{o}}m},
+  title        = {An Ontological Analysis of Value Propositions},
+  booktitle    = {21st {IEEE} International Enterprise Distributed Object Computing
+                  Conference, {EDOC} 2017, Quebec City, QC, Canada, October 10-13, 2017},
+  pages        = {184--193},
+  publisher    = {{IEEE} Computer Society},
+  year         = {2017},
+  url          = {https://doi.org/10.1109/EDOC.2017.32},
+  doi          = {10.1109/EDOC.2017.32},
+  timestamp    = {Fri, 24 Mar 2023 00:04:51 +0100},
+  biburl       = {https://dblp.org/rec/conf/edoc/SalesGGM17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">@inproceedings{DBLP:conf/fois/AnderssonGJL16,
+  author       = {Birger Andersson and
+                  Nicola Guarino and
+                  Paul Johannesson and
+                  Barbara Livieri},
+  editor       = {Roberta Ferrario and
+                  Werner Kuhn},
+  title        = {Towards an Ontology of Value Ascription},
+  booktitle    = {Formal Ontology in Information Systems - Proceedings of the 9th International
+                  Conference, {FOIS} 2016, Annecy, France, July 6-9, 2016},
+  series       = {Frontiers in Artificial Intelligence and Applications},
+  volume       = {283},
+  pages        = {331--344},
+  publisher    = {{IOS} Press},
+  year         = {2016},
+  url          = {https://doi.org/10.3233/978-1-61499-660-6-331},
+  doi          = {10.3233/978-1-61499-660-6-331},
+  timestamp    = {Tue, 09 Feb 2021 08:32:32 +0100},
+  biburl       = {https://dblp.org/rec/conf/fois/AnderssonGJL16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">ValueBearer ValueObject is a Role played by Object which values are ascribed based on qualities that are central to the valuation activity either for their functional role, (e.g. insects that carry pollen could be valuated for their functional role in an ecosystem) as well as non-functional role based on actors’ preferences, (e.g. the westerly seashore is preferred by the actor x for its aesthetic qualities). Example of ValueBearer are products and services, incuding ecosystem services.
+
+ValueBearer is derived from UFO and in that characterization correspond to a role mixin (a role that aggregates several entities with different identities).
+
+Value is included in ecosystem services (ESs) casacde framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">ValueBearer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gretaadamo/ontologies/2023/10/SESsION-126#ValueBearer"/>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/fois/AnderssonGJL16,
+  author       = {Birger Andersson and
+                  Nicola Guarino and
+                  Paul Johannesson and
+                  Barbara Livieri},
+  editor       = {Roberta Ferrario and
+                  Werner Kuhn},
+  title        = {Towards an Ontology of Value Ascription},
+  booktitle    = {Formal Ontology in Information Systems - Proceedings of the 9th International
+                  Conference, {FOIS} 2016, Annecy, France, July 6-9, 2016},
+  series       = {Frontiers in Artificial Intelligence and Applications},
+  volume       = {283},
+  pages        = {331--344},
+  publisher    = {{IOS} Press},
+  year         = {2016},
+  url          = {https://doi.org/10.3233/978-1-61499-660-6-331},
+  doi          = {10.3233/978-1-61499-660-6-331},
+  timestamp    = {Tue, 09 Feb 2021 08:32:32 +0100},
+  biburl       = {https://dblp.org/rec/conf/fois/AnderssonGJL16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@inproceedings{DBLP:conf/rcis/AdamoW22,
+  author       = {Greta Adamo and
+                  Max Willis},
+  editor       = {Renata S. S. Guizzardi and
+                  Jolita Ralyt{\&apos;{e}} and
+                  Xavier Franch},
+  title        = {Conceptual Integration for Social-Ecological Systems - An Ontological
+                  Approach},
+  booktitle    = {Research Challenges in Information Science - 16th International Conference,
+                  {RCIS} 2022, Barcelona, Spain, May 17-20, 2022, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {446},
+  pages        = {321--337},
+  publisher    = {Springer},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-05760-1\_19},
+  doi          = {10.1007/978-3-031-05760-1\_19},
+  timestamp    = {Wed, 18 May 2022 10:21:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
+        <rdfs:comment xml:lang="en">ValueObject is a ValueBearer played by substantials.
+
+ValueObject is derived from [DBLP:conf/fois/AnderssonGJL16].
+
+Value is included in ecosystem services (ESs) casacde framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">ValueObject</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
