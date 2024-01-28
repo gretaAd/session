@@ -32,8 +32,8 @@ This ontology has been created to facilitate interoperability and compatibility 
 
 ## References
 
-[1] Adamo, G., & Willis, M. (2022, May). Conceptual Integration for Social-Ecological Systems: An Ontological Approach. In International Conference on Research Challenges in Information Science (pp. 321-337). Cham: Springer International Publishing.
-[2] Adamo, G., & Willis, M. (2023, May). The Omnipresent Role of Technology in Social-Ecological Systems: Ontological Discussion and Updated Integrated Framework. In International Conference on Research Challenges in Information Science (pp. 87-102). Cham: Springer Nature Switzerland.
-[3] Potschin, M., Haines-Young, R., et al.: Defining and measuring ecosystem services. In: Routledge Handbook of Ecosystem Services, pp. 25–44 (2016).
-[4] McGinnis, M. D., & Ostrom, E. (2014). Social-ecological system framework: initial changes and continuing challenges. Ecology and society, 19(2).
-[5] Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. S. (2008, February). Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology. In CIbSE (pp. 127-140).
+1. Adamo, G., & Willis, M. (2022, May). Conceptual Integration for Social-Ecological Systems: An Ontological Approach. In International Conference on Research Challenges in Information Science (pp. 321-337). Cham: Springer International Publishing.
+2. Adamo, G., & Willis, M. (2023, May). The Omnipresent Role of Technology in Social-Ecological Systems: Ontological Discussion and Updated Integrated Framework. In International Conference on Research Challenges in Information Science (pp. 87-102). Cham: Springer Nature Switzerland.
+3. Potschin, M., Haines-Young, R., et al.: Defining and measuring ecosystem services. In: Routledge Handbook of Ecosystem Services, pp. 25–44 (2016).
+4. McGinnis, M. D., & Ostrom, E. (2014). Social-ecological system framework: initial changes and continuing challenges. Ecology and society, 19(2).
+5. Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. S. (2008, February). Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology. In CIbSE (pp. 127-140).
