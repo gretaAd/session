@@ -5,11 +5,11 @@
 
   ## About SESsION
 
-SESsION is the ontology derived from the concetual integration of multiple social-ecological system paradigms [1,2] beginning with the ecosystem services (ESs) cascade [4] and the social-ecological system framework (SESF) [4].
+SESsION is the ontology derived from the concetual integration of multiple social-ecological system paradigms beginning with the ecosystem services (ESs) cascade [4] and the social-ecological system framework (SESF) [4].
 
-Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature as references. 
+Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis [1,2]. The ontological analysis were performed following mainly the Unified Foundational Ontology (UFO), the Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE), and related literature as references. For more detail please consult [1,2].
 
-SESsION is aligned with gUFO (the lightweight version of the Unified Foundational Ontology (UFO): https://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (a simplified version of the Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE): http://www.ontologydesignpatterns.org/ont/dul/DUL.owl). Several additional foundational concepts were added based on UFO [5], particularly UFO-C, and DOLCE cognate literature.
+SESsION is aligned with gUFO (the lightweight version of UFO: https://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (a simplified version of DOLCE: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl). Several additional foundational concepts were added based on UFO [5], particularly UFO-C, and DOLCE cognate literature.
 
 The ESs cascade elements included are:
 - **Ecosystem Service**;
