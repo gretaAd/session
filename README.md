@@ -5,11 +5,11 @@
 
   ## About SESsION
 
-SESsION is the ontology derived from the concetual integration of multiple social-ecological system paradigms beginning with the ecosystem services (ESs) cascade and the social-ecological system framework (SESF).
+SESsION is the ontology derived from the concetual integration of multiple social-ecological system paradigms [1,2] beginning with the ecosystem services (ESs) cascade [4] and the social-ecological system framework (SESF) [4].
 
 Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis. The ontological analysis were performed following mainly DOLCE, UFO and related literature as references. 
 
-SESsION is aligned with gUFO (the lightweight version of UFO: https://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl).
+SESsION is aligned with gUFO (the lightweight version of the Unified Foundational Ontology (UFO): https://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (a simplified version of the Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE): http://www.ontologydesignpatterns.org/ont/dul/DUL.owl). Several additional foundational concepts were added based on UFO [5], particularly UFO-C, and DOLCE cognate literature.
 
 The ESs cascade elements included are:
 - **Ecosystem Service**;
@@ -29,3 +29,11 @@ The SESF elements included are:
 ## Why SESsION?
 
 This ontology has been created to facilitate interoperability and compatibility of social-ecological systems studies, and to support data collection and interpretation for participatory sense-making workshops with stakeholders.
+
+## References
+
+[1] Adamo, G., & Willis, M. (2022, May). Conceptual Integration for Social-Ecological Systems: An Ontological Approach. In International Conference on Research Challenges in Information Science (pp. 321-337). Cham: Springer International Publishing.
+[2] Adamo, G., & Willis, M. (2023, May). The Omnipresent Role of Technology in Social-Ecological Systems: Ontological Discussion and Updated Integrated Framework. In International Conference on Research Challenges in Information Science (pp. 87-102). Cham: Springer Nature Switzerland.
+[3] Potschin, M., Haines-Young, R., et al.: Defining and measuring ecosystem services. In: Routledge Handbook of Ecosystem Services, pp. 25–44 (2016).
+[4] McGinnis, M. D., & Ostrom, E. (2014). Social-ecological system framework: initial changes and continuing challenges. Ecology and society, 19(2).
+[5] Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. S. (2008, February). Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology. In CIbSE (pp. 127-140).
