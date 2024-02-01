@@ -30,6 +30,10 @@ The SESF elements included are:
 
 This ontology has been created to facilitate interoperability and compatibility of social-ecological systems studies, and to support data collection and interpretation for participatory sense-making workshops with stakeholders.
 
+## SESsION participatory events
+
+- 18th Research Challenges in Information Science (RCIS 2024): SESsION workshop (https://humanfactorsinsemantics.net/RCIS2024.html)
+
 ## References
 
 1. Adamo, G., & Willis, M. (2022, May). Conceptual Integration for Social-Ecological Systems: An Ontological Approach. In International Conference on Research Challenges in Information Science (pp. 321-337). Cham: Springer International Publishing.
