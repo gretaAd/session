@@ -32,7 +32,7 @@ This ontology has been created to facilitate interoperability and compatibility 
 
 ## SESsION participatory events
 
-- 18th Research Challenges in Information Science (RCIS 2024): SESsION workshop (https://humanfactorsinsemantics.net/RCIS2024.html)
+- 18th International Conference on Research Challenges in Information Science (RCIS 2024): SESsION workshop (https://humanfactorsinsemantics.net/RCIS2024.html)
 
 ## References
 
