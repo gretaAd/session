@@ -7,7 +7,7 @@
 
 SESsION is the ontology derived from the concetual integration of multiple social-ecological system paradigms beginning with the ecosystem services (ESs) cascade [4] and the social-ecological system framework (SESF) [4].
 
-Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis [1,2]. The ontological analysis were performed following mainly the Unified Foundational Ontology (UFO), the Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE), and related literature as references. For more detail please consult [1,2].
+Although the integration of ESs cascade and SESF is not complete, this ontology represents a first implementation following two prior publications at the Research Challenges in Information Science explaining the frameworks integrations and related ontological analysis [1,2]. The ontological analysis were performed following mainly the Unified Foundational Ontology (UFO) [5], the Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE) [6], and related literature as references. For more detail please consult [1,2].
 
 SESsION is aligned with gUFO (the lightweight version of UFO: https://purl.org/nemo/gufo) and references DOLCE+DnS Ultralite (a simplified version of DOLCE: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl). Several additional foundational concepts were added based on UFO [5], particularly UFO-C, and DOLCE cognate literature.
 
@@ -41,3 +41,4 @@ This ontology has been created to facilitate interoperability and compatibility 
 3. Potschin, M., Haines-Young, R., et al.: Defining and measuring ecosystem services. In: Routledge Handbook of Ecosystem Services, pp. 25–44 (2016).
 4. McGinnis, M. D., & Ostrom, E. (2014). Social-ecological system framework: initial changes and continuing challenges. Ecology and society, 19(2).
 5. Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. S. (2008, February). Grounding software domain ontologies in the unified foundational ontology (ufo): the case of the ode software process ontology. In CIbSE (pp. 127-140).
+6. Borgo, S., Ferrario, R., Gangemi, A., Guarino, N., Masolo, C., Porello, D., ... & Vieu, L. (2022). DOLCE: A descriptive ontology for linguistic and cognitive engineering. Applied ontology, 17(1), 45-69.
