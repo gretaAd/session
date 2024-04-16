@@ -1,4 +1,4 @@
-# Social Ecological SystemS ONtology (SESsION)
+# Social-Ecological SystemS Integrated ONtology (SESsION)
 
 - **Authors**: Greta Adamo, Ph.D.; Max Willis, Ph.D.
 - **License**: [CC-BY v4.0](http://creativecommons.org/licenses/by/4.0/)
