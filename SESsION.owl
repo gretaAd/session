@@ -2462,7 +2462,7 @@ Role is derived from DOLCE.</rdfs:comment>
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">Service is a ValueBearer played by activities that are intentionally perfomed by Actor or unintentionally perfomed by natural ecosystems.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Service is a ValueBearer played by activities that are intentionally performed by Actor or unintentionally performed by natural ecosystems.</rdfs:comment>
         <rdfs:label>Service</rdfs:label>
     </owl:Class>
     
