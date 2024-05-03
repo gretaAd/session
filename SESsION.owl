@@ -1116,6 +1116,19 @@ This entity has been derived from the notion of &quot;function&quot; in ecosyste
   biburl       = {https://dblp.org/rec/journals/ao/GuizzardiBFPAS22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
+        <terms:bibliographicCitation>@article{DBLP:journals/ao/Vieu06,
+  author       = {Laure Vieu},
+  title        = {On the transitivity of functional parthood},
+  journal      = {Appl. Ontology},
+  volume       = {1},
+  number       = {2},
+  pages        = {147--155},
+  year         = {2006},
+  url          = {http://content.iospress.com/articles/applied-ontology/ao015},
+  timestamp    = {Tue, 14 Jul 2020 14:30:42 +0200},
+  biburl       = {https://dblp.org/rec/journals/ao/Vieu06.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}</terms:bibliographicCitation>
         <terms:bibliographicCitation xml:lang="en">@article{haines2010links,
   title={The links between biodiversity, ecosystem services and human well-being},
   author={Haines-Young, Roy and Potschin, Marion and others},
@@ -1192,7 +1205,7 @@ This entity has been derived from the notion of &quot;function&quot; in ecosyste
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">FunctionalRole is a Role that captures of relations between systems and their components as functional unities.
+        <rdfs:comment xml:lang="en">FunctionalRole is a Role that captures relations between systems and their components as functional unities.
 
 This entity has been derived from the notion of &quot;function&quot; in ecosystem service (ESs) cascade.</rdfs:comment>
         <rdfs:label xml:lang="en"></rdfs:label>
@@ -1267,7 +1280,7 @@ GovernamentOrganization is a refinement of SESF proposed in [hinkel2014enhancing
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment>Governance ia an ValueActivity performed by actors that involves norms, commitments and decisions to achieve shared goals.
+        <rdfs:comment>Governance ia a ValueActivity performed by actors that involves norms, commitments and decisions to achieve shared goals.
 
 This entity has been derived from the notion of &quot;governance&quot; in SESF.</rdfs:comment>
         <rdfs:label>Governance</rdfs:label>
@@ -1300,7 +1313,7 @@ This entity has been derived from the notion of &quot;governance&quot; in SESF.<
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">HumanMadeResource is a Resource intentionally designed by Agents, such as a dam.</rdfs:comment>
+        <rdfs:comment xml:lang="en">HumanMadeResource is a Resource intentionally designed by Actor, such as a dam.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanMadeResource</rdfs:label>
     </owl:Class>
     
@@ -1697,7 +1710,7 @@ The distinction between social and natural roles can be found also in (arp2008fu
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">NaturalResource is a Resource that has not been intentionally designed by Agent and that can be found in nature, such as seafood.</rdfs:comment>
+        <rdfs:comment xml:lang="en">NaturalResource is a Resource that has not been intentionally designed by Actor and that can be found in nature, such as seafood.</rdfs:comment>
         <rdfs:label xml:lang="en">NaturalResource</rdfs:label>
     </owl:Class>
     
@@ -1981,7 +1994,7 @@ NonMonetaryValueAscription is derived from the literature of ecosystem services.
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">Norm is a description created and recognized by SocialAgents, such as a law or a social convention.
+        <rdfs:comment xml:lang="en">Norm is a description created and recognized by SocialActor, such as a law or a social convention.
 
 Norm is derived from DOLCE and is similar to NormativeDescription in UFO-C.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
@@ -2141,7 +2154,7 @@ Plan is adapted from [DBLP:conf/ifip5-1/SanfilippoBBGTR18].</rdfs:comment>
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">Policy is an agreed plan of action formally stipulated by a group of people, e.g. organisations, institutions, governaments, or a kind of document that communicate such an agreement.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Policy is an agreed plan of action formally stipulated by a group of people, e.g. organisations, institutions, governments, or a kind of document that communicates such an agreement.</rdfs:comment>
         <rdfs:label xml:lang="en">Policy</rdfs:label>
     </owl:Class>
     
@@ -2497,7 +2510,7 @@ ResourceSystem is included in the social-ecological system framwork (SESF)</rdfs
   biburl       = {https://dblp.org/rec/conf/rcis/AdamoW22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">Role is a contextual entity that can be played by different objects, for example an assistent professor and a sister.
+        <rdfs:comment xml:lang="en">Role is a contextual entity that can be played by different objects, for example an assistant professor and a sister.
 
 Role is derived from DOLCE.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
@@ -2580,7 +2593,7 @@ Role is derived from DOLCE.</rdfs:comment>
   year={2008},
   organization={Citeseer}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">SocialActor is an Actor that has the capability to act and recognition by a other Actor.
+        <rdfs:comment xml:lang="en">SocialActor is an Actor that has the capability to act and recognition by other actors.
 
 SocialActor is synonimus of SocialAgent in UFO-C and is closely related (albeit different) from SocialAgent in DOLCE.</rdfs:comment>
         <rdfs:label xml:lang="en">SocialActor</rdfs:label>
