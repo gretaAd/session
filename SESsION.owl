@@ -2422,7 +2422,7 @@ While the Millennium Ecosystem Assessment includes Regulating services, the Comm
   year={1994},
   organization={IEEE}
 }</terms:bibliographicCitation>
-        <rdfs:comment xml:lang="en">Resource is the role that objects plays in the context of activities or plans to achieve goals.
+        <rdfs:comment xml:lang="en">Resource is the role that an object plays in the context of activities or plans to achieve goals.
 
 
 This entity has been included in the social-ecological system framework (SESF).</rdfs:comment>
